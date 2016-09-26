@@ -137,7 +137,7 @@
                                     <div class="item-testimo">
                                         <div class="author-testimo">
                                             <div class="author-test-link">
-                                                <a href="#"><img src="images/home1/case_study_1.jpg" alt="" /></a>
+                                                <a href="#"><img src="images/home/case_study_1.jpg" alt="" /></a>
                                             </div>
                                             <div class="author-test-info">
                                                 <h3>Lorem ipsum dolor</h3>

@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE HTML>
 <html lang="en-US">
 <head>
     @section('metadata')
@@ -19,37 +19,37 @@
 
     <title>Hoishi – @yield('title')</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/font-linearicons.css"/>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css"/>
-    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
-    <link rel="stylesheet" type="text/css" href="css/owl.transitions.css"/>
-    <link rel="stylesheet" type="text/css" href="css/owl.theme.css"/>
-    <link rel="stylesheet" type="text/css" href="js/slideshow/settings.css"/>
-    <link rel="stylesheet" type="text/css" href="css/theme.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/font-awesome.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/font-linearicons.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap-theme.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/jquery.fancybox.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/jquery-ui.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/owl.carousel.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/owl.transitions.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/owl.theme.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('js/slideshow/settings.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/theme.css') }}" media="all"/>
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/responsive.css') }}" media="all"/>
 
     <!-- ****** favicon ****** -->
-    <link rel="shortcut icon" href="images/favicon/favicon.ico">
-    <link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon/favicon.ico">
-    <link rel="icon" type="image/png" sizes="196x196" href="images/favicon/favicon-192.png">
-    <link rel="icon" type="image/png" sizes="160x160" href="images/favicon/favicon-160.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="images/favicon/favicon-64.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16.png">
-    <link rel="apple-touch-icon" href="images/favicon/favicon-57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/favicon-114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/favicon-72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/favicon-144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/favicon-60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/favicon-120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/favicon-76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/favicon-152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon-180.png">
+    <link rel="shortcut icon" href="{{ URL::asset('images/favicon/favicon.ico') }}">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="{{ URL::asset('images/favicon/favicon.ico') }}">
+    <link rel="icon" type="image/png" sizes="196x196" href="{{ URL::asset('images/favicon/favicon-192.png') }}">
+    <link rel="icon" type="image/png" sizes="160x160" href="{{ URL::asset('images/favicon/favicon-160.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ URL::asset('images/favicon/favicon-96.png') }}">
+    <link rel="icon" type="image/png" sizes="64x64" href="{{ URL::asset('images/favicon/favicon-64.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ URL::asset('images/favicon/favicon-32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::asset('images/favicon/favicon-16.png') }}">
+    <link rel="apple-touch-icon" href="{{ URL::asset('images/favicon/favicon-57.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ URL::asset('images/favicon/favicon-114.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ URL::asset('images/favicon/favicon-72.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ URL::asset('images/favicon/favicon-144.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ URL::asset('images/favicon/favicon-60.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ URL::asset('images/favicon/favicon-120.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ URL::asset('images/favicon/favicon-76.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ URL::asset('images/favicon/favicon-152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ URL::asset('images/favicon/favicon-180.png') }}">
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="images/favicon/favicon-144.png">
     <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
@@ -64,7 +64,7 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-12">
                         <div class="logo4">
-                            <a href="/"><img src="images/home/logo.svg" alt="" /></a>
+                            <a href="/"><img src="{{asset('images/home/logo.svg')}}" alt="" /></a>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-5 col-xs-12">
@@ -104,43 +104,43 @@
                                         <a href="#" class="menu-title">Optical Transceivers</a>
                                     </li>
                                     <li class="has-cat-mega">
-                                        <a href="#">CFP Modules</a>
+                                        <a href="products/CFP">CFP Modules</a>
                                         <div class="cat-mega-menu cat-mega-style2">
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="list-cat-mega-menu">
                                                         <h2 class="title-cat-mega-menu">CFP modules</h2>
                                                         <ul>
-                                                            <li><a href="#">BROCADE-FOUNDRY</a></li>
-                                                            <li><a href="#">CIENA</a></li>
-                                                            <li><a href="#">CISCO CFP</a></li>
-                                                            <li><a href="#">JUNIPER CFP</a></li>
+                                                            <li><a href="products/CFP/BROCADE-FOUNDRY">BROCADE-FOUNDRY</a></li>
+                                                            <li><a href="products/CFP/CIENA">CIENA</a></li>
+                                                            <li><a href="products/CFP/CISCO CFP">CISCO CFP</a></li>
+                                                            <li><a href="products/CFP/JUNIPER CFP">JUNIPER CFP</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="zoom-image-thumb">
-                                                        <img src="images/products/hoishi_cfp.jpg" alt="hoishi cfp" />
+                                                        <img src="{{asset('images/products/hoishi_cfp.jpg') }}" alt="hoishi cfp" />
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="has-cat-mega">
-                                        <a href="#">CSFP Modules</a>
+                                        <a href="products/CSFP">CSFP Modules</a>
                                         <div class="cat-mega-menu cat-mega-style2">
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="list-cat-mega-menu">
                                                         <h2 class="title-cat-mega-menu">CSFP modules</h2>
                                                         <ul>
-                                                            <li><a href="#">BIDI</a></li>
+                                                            <li><a href="products/CSFP/BIDI">BIDI</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="zoom-image-thumb">
-                                                        <img src="images/products/hoishi_csfp.jpg" alt="hoishi csfp" />
+                                                        <img src="{{asset('images/products/hoishi_csfp.jpg') }}" alt="hoishi csfp" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -167,7 +167,7 @@
                                                 </div>
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="zoom-image-thumb">
-                                                        <img src="images/products/hoishi_gbic.jpg" alt="hoishi gbic" />
+                                                        <img src="{{asset('images/products/hoishi_gbic.jpg')}}" alt="hoishi gbic" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -191,7 +191,7 @@
                                                 </div>
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="zoom-image-thumb">
-                                                        <img src="images/products/hoishi_qsfp_plus.jpg" alt="hoishi qsfp" />
+                                                        <img src="{{asset('images/products/hoishi_qsfp_plus.jpg')}}" alt="hoishi qsfp" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -212,7 +212,7 @@
                                                 </div>
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="zoom-image-thumb">
-                                                        <img src="images/products/hoishi_qsfp28.jpg" alt="hoishi qsfp28" />
+                                                        <img src="{{asset('images/products/hoishi_qsfp28.jpg')}}" alt="hoishi qsfp28" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -234,7 +234,7 @@
                                                 </div>
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="zoom-image-thumb">
-                                                        <img src="images/products/hoishi_qsfp100.jpg" alt="hoishi qsfp100" />
+                                                        <img src="{{asset('images/products/hoishi_qsfp100.jpg')}}" alt="hoishi qsfp100" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -266,7 +266,7 @@
                                                 </div>
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="zoom-image-thumb">
-                                                        <img src="images/products/hoishi_sfp.jpg" alt="hoishi sfp" />
+                                                        <img src="{{asset('images/products/hoishi_sfp.jpg')}}" alt="hoishi sfp" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -295,7 +295,7 @@
                                                 </div>
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="zoom-image-thumb">
-                                                        <img src="images/products/hoishi_sfp_plus.jpg" alt="hoishi sfp+" />
+                                                        <img src="{{asset('images/products/hoishi_sfp_plus.jpg')}}" alt="hoishi sfp+" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -323,7 +323,7 @@
                                                 </div>
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="zoom-image-thumb">
-                                                        <img src="images/products/hoishi_x2.jpg" alt="hoishi x2" />
+                                                        <img src="{{asset('images/products/hoishi_x2.jpg')}}" alt="hoishi x2" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -349,7 +349,7 @@
                                                 </div>
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="zoom-image-thumb">
-                                                        <img src="images/products/hoishi_xenpak.jpg" alt="hoishi xenpak" />
+                                                        <img src="{{asset('images/products/hoishi_xenpak.jpg')}}" alt="hoishi xenpak" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -378,7 +378,7 @@
                                                 </div>
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="zoom-image-thumb">
-                                                        <img src="images/products/hoishi_xfp.jpg" alt="hoishi xfp" />
+                                                        <img src="{{asset('images/products/hoishi_xfp.jpg')}}" alt="hoishi xfp" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -563,9 +563,9 @@
                             <div class="social-footer social-footer4 social-network">
                                 <label>KEEP IN TOUCH</label>
                                 <ul>
-                                    <li><a href="https://www.facebook.com/HoishiLightSpeedData/" target="_blank"><img src="images/home/s1.png" alt=""></a></li>
-                                    <li><a href="https://twitter.com/Hoishi_Ltd" target="_blank"><img src="images/home/s2.png" alt=""></a></li>
-                                    <li><a href="https://www.linkedin.com/company/hoishi" target="_blank"><img src="images/home/s3.png" alt=""></a></li>
+                                    <li><a href="https://www.facebook.com/HoishiLightSpeedData/" target="_blank"><img src="{{asset('images/home/s1.png')}}" alt=""></a></li>
+                                    <li><a href="https://twitter.com/Hoishi_Ltd" target="_blank"><img src="{{asset('images/home/s2.png')}}" alt=""></a></li>
+                                    <li><a href="https://www.linkedin.com/company/hoishi" target="_blank"><img src="{{asset('images/home/s3.png')}}" alt=""></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -578,13 +578,13 @@
     <!-- End Footer -->
 </div>
 </body>
-<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.fancybox.js"></script>
-<script type="text/javascript" src="js/jquery-ui.js"></script>
-<script type="text/javascript" src="js/owl.carousel.js"></script>
-<script type="text/javascript" src="js/TimeCircles.js"></script>
-<script type="text/javascript" src="js/slideshow/jquery.themepunch.revolution.js"></script>
-<script type="text/javascript" src="js/slideshow/jquery.themepunch.plugins.min.js"></script>
-<script type="text/javascript" src="js/theme.js"></script>
+<script type="text/javascript" src="{{ URL::asset('js/jquery-1.12.0.min.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('js/jquery.fancybox.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('js/jquery-ui.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('js/owl.carousel.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('js/TimeCircles.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('js/slideshow/jquery.themepunch.revolution.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('js/slideshow/jquery.themepunch.plugins.min.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('js/theme.js') }}"></script>
 </html>
