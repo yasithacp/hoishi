@@ -55,6 +55,10 @@ Route::get('/product_list', function () {
     return view('product_list');
 });
 
+Route::get('/terms', function () {
+    return view('terms');
+});
+
 Route::get('/products/{module}', 'ProductController@viewModuleProducts');
 
 Route::get('/products/{module}/{category}', 'ProductController@viewCategoryProducts');

@@ -104,17 +104,17 @@
                                         <a href="#" class="menu-title">Optical Transceivers</a>
                                     </li>
                                     <li class="has-cat-mega">
-                                        <a href="products/CFP">CFP Modules</a>
+                                        <a href="{{ url('products/CFP') }}">CFP Modules</a>
                                         <div class="cat-mega-menu cat-mega-style2">
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="list-cat-mega-menu">
                                                         <h2 class="title-cat-mega-menu">CFP modules</h2>
                                                         <ul>
-                                                            <li><a href="products/CFP/BROCADE-FOUNDRY">BROCADE-FOUNDRY</a></li>
-                                                            <li><a href="products/CFP/CIENA">CIENA</a></li>
-                                                            <li><a href="products/CFP/CISCO CFP">CISCO CFP</a></li>
-                                                            <li><a href="products/CFP/JUNIPER CFP">JUNIPER CFP</a></li>
+                                                            <li><a href="{{ url('products/CFP/BROCADE-FOUNDRY') }}">BROCADE-FOUNDRY</a></li>
+                                                            <li><a href="{{ url('products/CFP/CIENA') }}">CIENA</a></li>
+                                                            <li><a href="{{ url('products/CFP/CISCO CFP') }}">CISCO CFP</a></li>
+                                                            <li><a href="{{ url('products/CFP/JUNIPER CFP') }}">JUNIPER CFP</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -127,14 +127,14 @@
                                         </div>
                                     </li>
                                     <li class="has-cat-mega">
-                                        <a href="products/CSFP">CSFP Modules</a>
+                                        <a href="{{ url('products/CSFP') }}">CSFP Modules</a>
                                         <div class="cat-mega-menu cat-mega-style2">
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="list-cat-mega-menu">
                                                         <h2 class="title-cat-mega-menu">CSFP modules</h2>
                                                         <ul>
-                                                            <li><a href="products/CSFP/BIDI">BIDI</a></li>
+                                                            <li><a href="{{ url('products/CSFP/BIDI') }}">BIDI</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -147,21 +147,21 @@
                                         </div>
                                     </li>
                                     <li class="has-cat-mega">
-                                        <a href="#" >GBIC Modules</a>
+                                        <a href="{{ url('products/GBIC') }}" >GBIC Modules</a>
                                         <div class="cat-mega-menu cat-mega-style2">
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="list-cat-mega-menu">
                                                         <h2 class="title-cat-mega-menu">GBIC modules</h2>
                                                         <ul>
-                                                            <li><a href="#">BIDI</a></li>
-                                                            <li><a href="#">CWDM</a></li>
-                                                            <li><a href="#">DWDM</a></li>
-                                                            <li><a href="#">EX</a></li>
-                                                            <li><a href="#">LX</a></li>
-                                                            <li><a href="#">SX</a></li>
-                                                            <li><a href="#">T</a></li>
-                                                            <li><a href="#">ZX</a></li>
+                                                            <li><a href="{{ url('products/GBIC/BIDI') }}">BIDI</a></li>
+                                                            <li><a href="{{ url('products/GBIC/CWDM') }}">CWDM</a></li>
+                                                            <li><a href="{{ url('products/GBIC/DWDM') }}">DWDM</a></li>
+                                                            <li><a href="{{ url('products/GBIC/EX') }}">EX</a></li>
+                                                            <li><a href="{{ url('products/GBIC/LX') }}">LX</a></li>
+                                                            <li><a href="{{ url('products/GBIC/SX') }}">SX</a></li>
+                                                            <li><a href="{{ url('products/GBIC/T') }}">T</a></li>
+                                                            <li><a href="{{ url('products/GBIC/ZX') }}">ZX</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -174,18 +174,18 @@
                                         </div>
                                     </li>
                                     <li class="has-cat-mega">
-                                        <a href="#">QSFP+ Modules</a>
+                                        <a href="{{ url('products/QSFP+') }}">QSFP+ Modules</a>
                                         <div class="cat-mega-menu cat-mega-style2">
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="list-cat-mega-menu">
                                                         <h2 class="title-cat-mega-menu">QSFP+ modules</h2>
                                                         <ul>
-                                                            <li><a href="#">BIDI</a></li>
-                                                            <li><a href="#">ER4</a></li>
-                                                            <li><a href="#">IR4</a></li>
-                                                            <li><a href="#">LR4</a></li>
-                                                            <li><a href="#">SR4</a></li>
+                                                            <li><a href="{{ url('products/QSFP+/BIDI') }}">BIDI</a></li>
+                                                            <li><a href="{{ url('products/QSFP+/ER4') }}">ER4</a></li>
+                                                            <li><a href="{{ url('products/QSFP+/IR4') }}">IR4</a></li>
+                                                            <li><a href="{{ url('products/QSFP+/LR4') }}">LR4</a></li>
+                                                            <li><a href="{{ url('products/QSFP+/SR4') }}">SR4</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -198,15 +198,15 @@
                                         </div>
                                     </li>
                                     <li class="has-cat-mega">
-                                        <a href="#">QSFP28 Modules</a>
+                                        <a href="{{ url('products/QSFP28') }}">QSFP28 Modules</a>
                                         <div class="cat-mega-menu cat-mega-style2">
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="list-cat-mega-menu">
                                                         <h2 class="title-cat-mega-menu">QSFP28 modules</h2>
                                                         <ul>
-                                                            <li><a href="#">LR4</a></li>
-                                                            <li><a href="#">PLRL4</a></li>
+                                                            <li><a href="{{ url('products/QSFP28/LR4') }}">LR4</a></li>
+                                                            <li><a href="{{ url('products/QSFP28/PLRL4') }}">PLRL4</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -219,16 +219,16 @@
                                         </div>
                                     </li>
                                     <li class="has-cat-mega">
-                                        <a href="#">QSFP100 Modules</a>
+                                        <a href="{{ url('products/QSFP100') }}">QSFP100 Modules</a>
                                         <div class="cat-mega-menu cat-mega-style2">
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="list-cat-mega-menu">
                                                         <h2 class="title-cat-mega-menu">QSFP100 modules</h2>
                                                         <ul>
-                                                            <li><a href="#">LR4</a></li>
-                                                            <li><a href="#">PLRL4</a></li>
-                                                            <li><a href="#">SR4</a></li>
+                                                            <li><a href="{{ url('products/QSFP100/LR4') }}">LR4</a></li>
+                                                            <li><a href="{{ url('products/QSFP100/PLRL4') }}">PLRL4</a></li>
+                                                            <li><a href="{{ url('products/QSFP100/SR4') }}">SR4</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -241,26 +241,26 @@
                                         </div>
                                     </li>
                                     <li class="has-cat-mega">
-                                        <a href="#">SFP Modules</a>
+                                        <a href="{{ url('products/SFP') }}">SFP Modules</a>
                                         <div class="cat-mega-menu cat-mega-style2">
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="list-cat-mega-menu">
                                                         <h2 class="title-cat-mega-menu">SFP modules</h2>
                                                         <ul>
-                                                            <li><a href="#">BIDI</a></li>
-                                                            <li><a href="#">CWDM</a></li>
-                                                            <li><a href="#">DWDM</a></li>
-                                                            <li><a href="#">EX</a></li>
-                                                            <li><a href="#">FX</a></li>
-                                                            <li><a href="#">LX</a></li>
-                                                            <li><a href="#">LW</a></li>
-                                                            <li><a href="#">ONS</a></li>
-                                                            <li><a href="#">SX</a></li>
-                                                            <li><a href="#">SW</a></li>
-                                                            <li><a href="#">T</a></li>
-                                                            <li><a href="#">ZX</a></li>
-                                                            <li><a href="#">ZXL</a></li>
+                                                            <li><a href="{{ url('products/SFP/BIDI') }}">BIDI</a></li>
+                                                            <li><a href="{{ url('products/SFP/CWDM') }}">CWDM</a></li>
+                                                            <li><a href="{{ url('products/SFP/DWDM') }}">DWDM</a></li>
+                                                            <li><a href="{{ url('products/SFP/EX') }}">EX</a></li>
+                                                            <li><a href="{{ url('products/SFP/FX') }}">FX</a></li>
+                                                            <li><a href="{{ url('products/SFP/LX') }}">LX</a></li>
+                                                            <li><a href="{{ url('products/SFP/LW') }}">LW</a></li>
+                                                            <li><a href="{{ url('products/SFP/ONS') }}">ONS</a></li>
+                                                            <li><a href="{{ url('products/SFP/SX') }}">SX</a></li>
+                                                            <li><a href="{{ url('products/SFP/SW') }}">SW</a></li>
+                                                            <li><a href="{{ url('products/SFP/T') }}">T</a></li>
+                                                            <li><a href="{{ url('products/SFP/ZX') }}">ZX</a></li>
+                                                            <li><a href="{{ url('products/SFP/ZXL') }}">ZXL</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -273,23 +273,23 @@
                                         </div>
                                     </li>
                                     <li class="has-cat-mega">
-                                        <a href="#">SFP+ Modules</a>
+                                        <a href="{{ url('products/SFP+') }}">SFP+ Modules</a>
                                         <div class="cat-mega-menu cat-mega-style2">
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="list-cat-mega-menu">
                                                         <h2 class="title-cat-mega-menu">SFP+ modules</h2>
                                                         <ul>
-                                                            <li><a href="#">BIDI</a></li>
-                                                            <li><a href="#">CWDM</a></li>
-                                                            <li><a href="#">DWDM</a></li>
-                                                            <li><a href="#">ER</a></li>
-                                                            <li><a href="#">LR</a></li>
-                                                            <li><a href="#">LRL</a></li>
-                                                            <li><a href="#">LRM</a></li>
-                                                            <li><a href="#">SR</a></li>
-                                                            <li><a href="#">T</a></li>
-                                                            <li><a href="#">ZR</a></li>
+                                                            <li><a href="{{ url('products/SFP+/BIDI') }}">BIDI</a></li>
+                                                            <li><a href="{{ url('products/SFP+/CWDM') }}">CWDM</a></li>
+                                                            <li><a href="{{ url('products/SFP+/DWDM') }}">DWDM</a></li>
+                                                            <li><a href="{{ url('products/SFP+/ER') }}">ER</a></li>
+                                                            <li><a href="{{ url('products/SFP+/LR') }}">LR</a></li>
+                                                            <li><a href="{{ url('products/SFP+/LRL') }}">LRL</a></li>
+                                                            <li><a href="{{ url('products/SFP+/LRM') }}">LRM</a></li>
+                                                            <li><a href="{{ url('products/SFP+/SR') }}">SR</a></li>
+                                                            <li><a href="{{ url('products/SFP+/T') }}">T</a></li>
+                                                            <li><a href="{{ url('products/SFP+/ZR') }}">ZR</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -302,22 +302,22 @@
                                         </div>
                                     </li>
                                     <li class="has-cat-mega">
-                                        <a href="#">X2 Modules</a>
+                                        <a href="{{ url('products/X2') }}">X2 Modules</a>
                                         <div class="cat-mega-menu cat-mega-style2">
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="list-cat-mega-menu">
                                                         <h2 class="title-cat-mega-menu">X2 modules</h2>
                                                         <ul>
-                                                            <li><a href="#">CX4</a></li>
-                                                            <li><a href="#">DWDM</a></li>
-                                                            <li><a href="#">ER</a></li>
-                                                            <li><a href="#">LR</a></li>
-                                                            <li><a href="#">LRM</a></li>
-                                                            <li><a href="#">LX</a></li>
-                                                            <li><a href="#">SR</a></li>
-                                                            <li><a href="#">T</a></li>
-                                                            <li><a href="#">ZR</a></li>
+                                                            <li><a href="{{ url('products/X2/CX4') }}">CX4</a></li>
+                                                            <li><a href="{{ url('products/X2/DWDM') }}">DWDM</a></li>
+                                                            <li><a href="{{ url('products/X2/ER') }}">ER</a></li>
+                                                            <li><a href="{{ url('products/X2/LR') }}">LR</a></li>
+                                                            <li><a href="{{ url('products/X2/LRM') }}">LRM</a></li>
+                                                            <li><a href="{{ url('products/X2/LX') }}">LX</a></li>
+                                                            <li><a href="{{ url('products/X2/SR') }}">SR</a></li>
+                                                            <li><a href="{{ url('products/X2/T') }}">T</a></li>
+                                                            <li><a href="{{ url('products/X2/ZR') }}">ZR</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -330,20 +330,20 @@
                                         </div>
                                     </li>
                                     <li class="has-cat-mega">
-                                        <a href="#">XENPAK Modules</a>
+                                        <a href="{{ url('products/XENPAK') }}">XENPAK Modules</a>
                                         <div class="cat-mega-menu cat-mega-style2">
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="list-cat-mega-menu">
                                                         <h2 class="title-cat-mega-menu">XENPAK modules</h2>
                                                         <ul>
-                                                            <li><a href="#">DWDM</a></li>
-                                                            <li><a href="#">ER</a></li>
-                                                            <li><a href="#">LR</a></li>
-                                                            <li><a href="#">LRM</a></li>
-                                                            <li><a href="#">LX4</a></li>
-                                                            <li><a href="#">SR</a></li>
-                                                            <li><a href="#">ZR</a></li>
+                                                            <li><a href="{{ url('products/XENPAK/DWDM') }}">DWDM</a></li>
+                                                            <li><a href="{{ url('products/XENPAK/ER') }}">ER</a></li>
+                                                            <li><a href="{{ url('products/XENPAK/LR') }}">LR</a></li>
+                                                            <li><a href="{{ url('products/XENPAK/LRM') }}">LRM</a></li>
+                                                            <li><a href="{{ url('products/XENPAK/LX4') }}">LX4</a></li>
+                                                            <li><a href="{{ url('products/XENPAK/SR') }}">SR</a></li>
+                                                            <li><a href="{{ url('products/XENPAK/ZR') }}">ZR</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -356,23 +356,23 @@
                                         </div>
                                     </li>
                                     <li class="has-cat-mega">
-                                        <a href="#">XFP Modules</a>
+                                        <a href="{{ url('products/XFP') }}">XFP Modules</a>
                                         <div class="cat-mega-menu cat-mega-style2">
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="list-cat-mega-menu">
                                                         <h2 class="title-cat-mega-menu">XFP modules</h2>
                                                         <ul>
-                                                            <li><a href="#">BIDI</a></li>
-                                                            <li><a href="#">CX4</a></li>
-                                                            <li><a href="#">CWDM</a></li>
-                                                            <li><a href="#">DWDM</a></li>
-                                                            <li><a href="#">ER</a></li>
-                                                            <li><a href="#">LR</a></li>
-                                                            <li><a href="#">LRM</a></li>
-                                                            <li><a href="#">ONS</a></li>
-                                                            <li><a href="#">SR</a></li>
-                                                            <li><a href="#">ZR</a></li>
+                                                            <li><a href="{{ url('products/XFP/BIDI') }}">BIDI</a></li>
+                                                            <li><a href="{{ url('products/XFP/CX4') }}">CX4</a></li>
+                                                            <li><a href="{{ url('products/XFP/CWDM') }}">CWDM</a></li>
+                                                            <li><a href="{{ url('products/XFP/DWDM') }}">DWDM</a></li>
+                                                            <li><a href="{{ url('products/XFP/ER') }}">ER</a></li>
+                                                            <li><a href="{{ url('products/XFP/LR') }}">LR</a></li>
+                                                            <li><a href="{{ url('products/XFP/LRM') }}">LRM</a></li>
+                                                            <li><a href="{{ url('products/XFP/ONS') }}">ONS</a></li>
+                                                            <li><a href="{{ url('products/XFP/SR') }}">SR</a></li>
+                                                            <li><a href="{{ url('products/XFP/ZR') }}">ZR</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -388,22 +388,22 @@
                                         <a href="#" class="menu-title">Direct Attach Cables</a>
                                     </li>
                                     <li>
-                                        <a href="#">SFT+ TWINAX</a>
+                                        <a href="{{ url('cables/SFT+ TWINAX') }}">SFT+ TWINAX</a>
                                     </li>
                                     <li>
-                                        <a href="#">QSFT+TWINAX</a>
+                                        <a href="{{ url('cables/QSFT+ TWINAX') }}">QSFT+ TWINAX</a>
                                     </li>
                                     <li>
-                                        <a href="#">QSFP100 TWINAX</a>
+                                        <a href="{{ url('cables/QSFP100 TWINAX') }}">QSFP100 TWINAX</a>
                                     </li>
                                     <li>
-                                        <a href="#">QSFP28 TWINAX</a>
+                                        <a href="{{ url('cables/QSFP28 TWINAX') }}">QSFP28 TWINAX</a>
                                     </li>
                                     <li>
-                                        <a href="#">SFP+ INFINIBAND</a>
+                                        <a href="{{ url('cables/SFP+ INFINIBAND') }}">SFP+ INFINIBAND</a>
                                     </li>
                                     <li>
-                                        <a href="#">STACKING</a>
+                                        <a href="{{ url('cables/STACKING') }}">STACKING</a>
                                     </li>
                                     <li>
                                         <a href="#" class="menu-title">Active Optical Cables</a>
@@ -426,29 +426,29 @@
                                 <li class="menu-item-has-children">
                                     <a href="#">Company</a>
                                     <ul class="sub-menu">
-                                        <li><a href="about">About Us</a></li>
-                                        <li><a href="why_us">Why Us</a></li>
-                                        <li><a href="news">News</a></li>
+                                        <li><a href="{{ url('about') }}">About Us</a></li>
+                                        <li><a href="{{ url('why_us') }}">Why Us</a></li>
+                                        <li><a href="{{ url('news') }}">News</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
                                     <a href="#">Products</a>
                                     <ul class="sub-menu">
-                                        <li><a href="product_overview">Product Overview</a></li>
-                                        <li><a href="product_information">Product Information</a></li>
-                                        <li><a href="product_list">product List</a></li>
+                                        <li><a href="{{ url('product_overview') }}">Product Overview</a></li>
+                                        <li><a href="{{ url('product_information') }}">Product Information</a></li>
+                                        <li><a href="{{ url('product_list') }}">product List</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
                                     <a href="#">Support</a>
                                     <ul class="sub-menu">
-                                        <li><a href="shipping">Shipping</a></li>
-                                        <li><a href="warranty">Warranty</a></li>
-                                        <li><a href="faq">FAQ</a></li>
+                                        <li><a href="{{ url('shipping') }}">Shipping</a></li>
+                                        <li><a href="{{ url('warranty') }}">Warranty</a></li>
+                                        <li><a href="{{ url('faq') }}">FAQ</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="contact">Contacts</a>
+                                    <a href="{{ url('contact') }}">Contacts</a>
                                 </li>
                             </ul>
                             <a href="#" class="toggle-mobile-menu"><span>Menu</span></a>
@@ -475,9 +475,9 @@
                             <div class="box-menu-footer4">
                                 <h2>Company</h2>
                                 <ul>
-                                    <li><a href="about">About Us</a></li>
-                                    <li><a href="why_us">Why Us</a></li>
-                                    <li><a href="news">News</a></li>
+                                    <li><a href="{{ url('about') }}">About Us</a></li>
+                                    <li><a href="{{ url('why_us') }}">Why Us</a></li>
+                                    <li><a href="{{ url('news') }}">News</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -485,9 +485,9 @@
                             <div class="box-menu-footer4">
                                 <h2>Products</h2>
                                 <ul>
-                                    <li><a href="product_overview">Products Overview</a></li>
-                                    <li><a href="product_information">Products Informations</a></li>
-                                    <li><a href="product_list">Product List</a></li>
+                                    <li><a href="{{ url('product_overview') }}">Products Overview</a></li>
+                                    <li><a href="{{ url('product_information') }}">Products Informations</a></li>
+                                    <li><a href="{{ url('product_list') }}">Product List</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -495,9 +495,9 @@
                             <div class="box-menu-footer4">
                                 <h2>Support</h2>
                                 <ul>
-                                    <li><a href="shipping">Shipping</a></li>
-                                    <li><a href="warranty">Warranty</a></li>
-                                    <li><a href="faq">FAQ</a></li>
+                                    <li><a href="{{ url('shipping') }}">Shipping</a></li>
+                                    <li><a href="{{ url('warranty') }}">Warranty</a></li>
+                                    <li><a href="{{ url('faq') }}">FAQ</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -553,10 +553,10 @@
                 <div class="copyright-social4">
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <p class="copyrigh4">©2016 <a href="kutetheme.com">hoishi.com</a></p>
+                            <p class="copyrigh4">©2016 <a href="hoishi.com">hoishi.com</a></p>
                             <div class="policy4">
                                 <label>Policies: </label>
-                                <a href="terms.html">Terms & Conditions</a>
+                                <a href="{{ url('terms') }}">Terms & Conditions</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-12">
