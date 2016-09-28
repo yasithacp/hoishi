@@ -75,7 +75,8 @@
                                             <div class="item-product">
                                                 <div class="product-thumb">
                                                     <a href="detail.html">
-                                                        <img class="first-thumb" alt="" src="{{ asset('images/products/sample.jpg') }}">
+                                                        <?php $img = str_replace('+', '_plus', 'images/products/hoishi_' . trim(strtolower($transceiver['Form Factor'])) . '.jpg'); ?>
+                                                        <img class="first-thumb" alt="" src="{{ asset($img) }}">
                                                     </a>
 
                                                 </div>
@@ -92,16 +93,6 @@
                                 <div class="row">
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <div class="sort-pagi-bar">
-                                            <div class="product-per-page">
-                                                <a href="#" class="per-page-toggle">show <span>6</span></a>
-                                                <ul class="per-page-list">
-                                                    <li><a href="#">6</a></li>
-                                                    <li><a href="#">9</a></li>
-                                                    <li><a href="#">12</a></li>
-                                                    <li><a href="#">18</a></li>
-                                                    <li><a href="#">24</a></li>
-                                                </ul>
-                                            </div>
                                             <div class="product-pagi-nav">
                                                 <a href="#" class="active">1</a>
                                                 <a href="#">2</a>

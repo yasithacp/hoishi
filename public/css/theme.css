@@ -230,10 +230,10 @@ blockquote {
 .smart-search-form  input[type="text"] {
     border-color: #ccc;
     border-style: solid;
-    border-width: 1px 0;
+    border-width: 1px;
     color: #999;
     height: 45px;
-    padding: 0 25px;
+    padding: 0 15px 0 15px;
     width: 100%;
 }
 .smart-search-form input[type="submit"] {
@@ -992,7 +992,7 @@ blockquote {
 }
 .title-product {
 	text-align:center;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     margin: 10px 10px 20px 10px;
 }
@@ -1212,11 +1212,14 @@ blockquote {
 }
 .product-code {
     margin-top: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .product-code > label {
     color: #666;
     font-weight: 400;
     margin: 0;
+    width: 90px;
 }
 .product-code > span {
     color: #999;
@@ -2667,6 +2670,7 @@ blockquote {
 .detail-gallery .mid {
     margin-bottom: 5px;
     position: relative;
+    text-align: center;
 }
 .detail-gallery {
     margin-right: -20px;
@@ -2985,6 +2989,7 @@ blockquote {
     margin-top: 30px;
 }
 .table-content-tab-detail {
+    width: 100%;
     border: 1px solid #e8e8e8;
     display: table;
     margin-top: -1px;
@@ -2993,8 +2998,8 @@ blockquote {
 .title-table-detail {
     border-right: 1px solid #e8e8e8;
     display: table-cell;
-    padding: 0 15px;
-    width: 90px;
+    padding: 10px 15px;
+    width: 30%;
 }
 .icon-table-detail {
     display: table-cell;
@@ -3007,7 +3012,8 @@ blockquote {
 .info-table-detail {
     color: #666;
     display: table-cell;
-    padding: 30px 0;
+    width: 70%;
+    padding: 10px 15px;
 }
 .info-table-detail  p {
     margin: 0;
@@ -7308,8 +7314,8 @@ ol.list-post-comment {
     text-transform: uppercase;
 }
 .des-shop-page {
-	font-size:17px;
-	line-height:26px;
+	font-size:16px;
+	line-height:24px;
     text-align: left;
 }
 .sub-title-h3 {
@@ -13521,6 +13527,7 @@ ol.list-post-comment {
 }
 .banner-slider10.simple-owl-slider {
     margin: 0 0 30px;
+    background-color:#1f1f1f; 
 }
 
 .item-banner10 .banner-info {
@@ -14210,3 +14217,4 @@ ol.list-post-comment {
 .m40 { margin-top:40px; }
 .author_link { font-weight:400; }
 .contact-box { margin-bottom: 30px; }
+.case-title { padding-bottom: 10px; }

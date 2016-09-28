@@ -8,6 +8,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Cable;
 use App\Transceiver;
 
 class ProductController extends Controller
@@ -24,5 +25,18 @@ class ProductController extends Controller
             ['Level 3 Type of Standard', $category],
         ])->get();
         return view('transceivers', compact('module', 'category', 'transceivers'));
+    }
+
+    public function viewCableTypes($type){
+        $cables = Cable::where('Level 2 Cable Type', $type)->get();
+        return $cables;
+    }
+
+    public function viewCableForms($type, $form){
+        $cables = Cable::where([
+            ['Level 2 Cable Type', $type],
+            ['Form', $form],
+        ])->get();
+        return $cables;
     }
 }

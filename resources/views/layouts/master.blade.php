@@ -69,13 +69,6 @@
                     </div>
                     <div class="col-md-6 col-sm-5 col-xs-12">
                         <div class="smart-search search-form4">
-                            <div class="select-category">
-                                <a href="#" class="category-toggle-link">All</a>
-                                <ul class="list-category-toggle sub-menu-top">
-                                    <li><a href="#">Optical Transceivers</a></li>
-                                    <li><a href="#">Cable Assemblies</a></li>
-                                </ul>
-                            </div>
                             <form class="smart-search-form">
                                 <input type="text"  name="search" value="Find product, categories..." onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue" />
                                 <input type="submit" value="search" />
@@ -385,34 +378,53 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="#" class="menu-title">Direct Attach Cables</a>
+                                        <a href="#" class="menu-title">Cable Assembliess</a>
                                     </li>
-                                    <li>
-                                        <a href="{{ url('cables/SFT+ TWINAX') }}">SFT+ TWINAX</a>
+                                    <li class="has-cat-mega">
+                                        <a href="{{ url('cables/DIRECT ATTACH CABLES') }}">DAC</a>
+                                        <div class="cat-mega-menu cat-mega-style2">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class="list-cat-mega-menu">
+                                                        <h2 class="title-cat-mega-menu">DAC</h2>
+                                                        <ul>
+                                                            <li><a href="{{ url('cables/DIRECT ATTACH CABLES/SFT+ TWINAX') }}">SFT+ TWINAX</a></li>
+                                                            <li><a href="{{ url('cables/DIRECT ATTACH CABLES/QSFT+ TWINAX') }}">QSFT+TWINAX</a></li>
+                                                            <li><a href="{{ url('cables/DIRECT ATTACH CABLES/QSFP100 TWINAX') }}">QSFP100TWINAX</a></li>
+                                                            <li><a href="{{ url('cables/DIRECT ATTACH CABLES/QSFP28 TWINAX') }}">QSFP28 TWINAX</a></li>
+                                                            <li><a href="{{ url('cables/DIRECT ATTACH CABLES/SFP+ INFINIBAND') }}">SFP+ INFINIBAND</a></li>
+                                                            <li><a href="{{ url('cables/DIRECT ATTACH CABLES/STACKING') }}">STACKING</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class="zoom-image-thumb">
+                                                        <img src="{{asset('images/products/hoishi_dac.jpg') }}" alt="hoishi dac" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
-                                    <li>
-                                        <a href="{{ url('cables/QSFT+ TWINAX') }}">QSFT+ TWINAX</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('cables/QSFP100 TWINAX') }}">QSFP100 TWINAX</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('cables/QSFP28 TWINAX') }}">QSFP28 TWINAX</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('cables/SFP+ INFINIBAND') }}">SFP+ INFINIBAND</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('cables/STACKING') }}">STACKING</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="menu-title">Active Optical Cables</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">ACTIVE OPTICAL CABLES</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">QSFP100 ACTIVE OPTICAL CABLES</a>
+                                    <li class="has-cat-mega">
+                                        <a href="{{ url('cables/ACTIVE OPTICAL CABLES') }}">AOC</a>
+                                        <div class="cat-mega-menu cat-mega-style2">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class="list-cat-mega-menu">
+                                                        <h2 class="title-cat-mega-menu">AOC</h2>
+                                                        <ul>
+                                                            <li><a href="{{ url('cables/ACTIVE OPTICAL CABLES/ACTIVE OPTICAL CABLES') }}">AOC</a></li>
+                                                            <li><a href="{{ url('cables/ACTIVE OPTICAL CABLES/QSFP100 AOC') }}">QSFP100 AOC</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class="zoom-image-thumb">
+                                                        <img src="{{asset('images/products/hoishi_aoc.jpg') }}" alt="hoishi aoc" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
                                 <a href="#" class="expand-category-link"></a>

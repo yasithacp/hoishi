@@ -137,19 +137,27 @@
                                     <div class="item-testimo">
                                         <div class="author-testimo">
                                             <div class="author-test-link">
-                                                <a href="#"><img src="images/home/case_study_1.jpg" alt="" /></a>
+                                                <a href="case_studies"><img src="images/home/case_study_1.jpg" alt="" /></a>
                                             </div>
                                             <div class="author-test-info">
-                                                <h3>Lorem ipsum dolor</h3>
-                                                <p>Proin urna enim, semper at egestas sed, elem entum in justo. Proin urna enim, semper at egestas sed, elem entum in justo. Proin urna enim enim</p>
-                                                <a class="author_link" href="">Read more</a>
+                                                <h3>Value Added Coding</h3>
+                                                <a href="case_studies">Read more</a>
+                                            </div>
+                                        </div>
+                                        <div class="author-testimo">
+                                            <div class="author-test-link">
+                                                <a href="case_studies"><img src="images/home/case_study_2.jpg" alt="" /></a>
+                                            </div>
+                                            <div class="author-test-info">
+                                                <h3>Expert Support</h3>
+                                                <a href="case_studies">Read more</a>
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
-                            <a href="#" class="viewall">View All</a>
+                            <a href="case_studies" class="viewall">View All</a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">

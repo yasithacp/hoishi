@@ -586,6 +586,8 @@
 	.cat-mega-menu { display: none; }
 	.banner-slider { display:none; }
     .banner-slider10 { display:none; }
+    .title-table-detail { width: 150px !important; }
+    .info-table-detail { width: auto; }
 }
 
 @media (max-width:480px) {
@@ -661,6 +663,7 @@
 	.banner-slider { display:none; }
 	.privacy-shipping.privacy-shipping12 { margin-top:0px; margin-bottom:0px; }
 	.bottom-home2.bottom-home12 { margin-bottom:0px; }
+
 }
 @media (max-width:360px) {
     .latest-testimo-tab .latest-post-info { padding-top: 0 }

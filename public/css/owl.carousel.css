@@ -68,4 +68,19 @@
   -moz-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
 }
-
+.banner-center {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.cs-list { 
+    list-style: disc;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.cs-list li {
+    margin-bottom: 6px;
+}
+.cs-body {
+    margin-bottom: 50px;
+}

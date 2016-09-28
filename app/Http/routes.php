@@ -59,6 +59,14 @@ Route::get('/terms', function () {
     return view('terms');
 });
 
+Route::get('/case_studies', function () {
+    return view('case_studies');
+});
+
 Route::get('/products/{module}', 'ProductController@viewModuleProducts');
 
 Route::get('/products/{module}/{category}', 'ProductController@viewCategoryProducts');
+
+Route::get('/cables/{type}', 'ProductController@viewCableTypes');
+
+Route::get('/cables/{type}/{form}', 'ProductController@viewCableForms');
