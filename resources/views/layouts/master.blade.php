@@ -565,7 +565,7 @@
                 <div class="copyright-social4">
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <p class="copyrigh4">©2016 <a href="hoishi.com">hoishi.com</a></p>
+                            <p class="copyrigh4">©2016 <a href="http://www.hoishi.com">hoishi.com</a></p>
                             <div class="policy4">
                                 <label>Policies: </label>
                                 <a href="{{ url('terms') }}">Terms & Conditions</a>

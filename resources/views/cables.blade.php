@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Optical Transceivers')
+@section('title', 'Cable Assemblies')
 @section('dropdown_class', 'category-dropdown hidden-category-dropdown')
 
 @section('content')
@@ -66,26 +66,32 @@
                     <div class="main-content-shop">
                         <div class="shop-tab-product">
                             <div class="shop-tab-title">
-                                <?php if(isset($category)) { ?>
-                                    <h2>{{ $module . ' / ' . $category }} Transceivers</h2>
+                                <?php if(isset($form)) { ?>
+                                <h2>{{ $type . ' / ' . $form }}</h2>
                                 <?php } else { ?>
-                                    <h2>{{ $module }} Transceivers</h2>
+                                <h2>{{ $type }}</h2>
                                 <?php } ?>
                             </div>
                             <div class="tab-content">
                                 <ul class="row product-grid auto-clear">
-                                    @foreach($transceivers as $transceiver)
+                                    @foreach($cables as $cable)
                                         <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                             <div class="item-product">
                                                 <div class="product-thumb">
                                                     <a href="detail.html">
-                                                        <?php $img = str_replace('+', '_plus', 'images/products/hoishi_' . trim(strtolower($transceiver['Form Factor'])) . '.jpg'); ?>
+                                                        <?php
+                                                            if($cable['Level 2 Cable Type'] == 'DIRECT ATTACH CABLES') {
+                                                                $img = str_replace('+', '_plus', 'images/products/hoishi_dac.jpg');
+                                                            } else {
+                                                                $img = str_replace('+', '_plus', 'images/products/hoishi_aoc.jpg');
+                                                            }
+                                                        ?>
                                                         <img class="first-thumb" alt="" src="{{ asset($img) }}">
                                                     </a>
 
                                                 </div>
                                                 <div class="product-info">
-                                                    <h3 class="title-product"><a href="#">{{ $transceiver->Model }}</a></h3>
+                                                    <h3 class="title-product"><a href="#">{{ $cable->Model }}</a></h3>
                                                     <div class="contact-product">
                                                         <a href="#" class="btn btn-price btn-sm" >Ask for Price</a>
                                                     </div>
@@ -93,8 +99,8 @@
                                             </div>
                                         </li>
                                     @endforeach
-                                    <?php if ( sizeof($transceivers) == 0 ) { ?>
-                                    <h3>No Records Found</h3>
+                                    <?php if ( sizeof($cables) == 0 ) { ?>
+                                        <h3>No Records Found</h3>
                                     <?php } ?>
                                 </ul>
                                 <div class="row">

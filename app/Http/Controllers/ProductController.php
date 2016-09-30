@@ -29,7 +29,7 @@ class ProductController extends Controller
 
     public function viewCableTypes($type){
         $cables = Cable::where('Level 2 Cable Type', $type)->get();
-        return $cables;
+        return view('cables', compact('type', 'cables'));
     }
 
     public function viewCableForms($type, $form){
@@ -37,6 +37,6 @@ class ProductController extends Controller
             ['Level 2 Cable Type', $type],
             ['Form', $form],
         ])->get();
-        return $cables;
+        return view('cables', compact('type', 'form', 'cables'));
     }
 }
