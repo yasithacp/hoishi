@@ -78,7 +78,7 @@
                                         <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                             <div class="item-product">
                                                 <div class="product-thumb">
-                                                    <a href="detail.html">
+                                                    <a href="{{ url('products/transceivers/' . $transceiver['id']) }}">
                                                         <?php $img = str_replace('+', '_plus', 'images/products/hoishi_' . trim(strtolower($transceiver['Form Factor'])) . '.jpg'); ?>
                                                         <img class="first-thumb" alt="" src="{{ asset($img) }}">
                                                     </a>
@@ -87,7 +87,7 @@
                                                 <div class="product-info">
                                                     <h3 class="title-product"><a href="#">{{ $transceiver->Model }}</a></h3>
                                                     <div class="contact-product">
-                                                        <a href="#" class="btn btn-price btn-sm" >Ask for Price</a>
+                                                        <a href="{{ url('contact') }}" class="btn btn-price btn-sm" >Ask for Price</a>
                                                     </div>
                                                 </div>
                                             </div>

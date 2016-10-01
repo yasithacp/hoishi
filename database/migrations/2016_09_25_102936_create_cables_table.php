@@ -14,7 +14,7 @@ class CreateCablesTable extends Migration
     {
         Schema::create('cables', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('Level 1 Cable Assemblies');
+            $table->string('Product Type');
             $table->string('Compatible Brands');
             $table->string('Level 2 Cable Type');
             $table->string('Form');

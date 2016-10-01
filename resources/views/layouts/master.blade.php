@@ -69,10 +69,10 @@
                     </div>
                     <div class="col-md-6 col-sm-5 col-xs-12">
                         <div class="smart-search search-form4">
-                            <form class="smart-search-form">
-                                <input type="text"  name="search" value="Find product, categories..." onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue" />
+                            {{ Form::open(array('action'=>'ProductController@searchProducts', 'method' => 'post', 'class' => 'smart-search-form')) }}
+                                <input type="text"  name="search" placeholder="Find product, categories..." />
                                 <input type="submit" value="search" />
-                            </form>
+                            {{ Form::close() }}
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-12">

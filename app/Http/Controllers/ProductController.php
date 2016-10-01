@@ -9,6 +9,7 @@
 namespace App\Http\Controllers;
 
 use App\Cable;
+use Illuminate\Http\Request;
 use App\Transceiver;
 
 class ProductController extends Controller
@@ -38,5 +39,37 @@ class ProductController extends Controller
             ['Form', $form],
         ])->get();
         return view('cables', compact('type', 'form', 'cables'));
+    }
+
+    public function searchProducts(Request $request){
+
+        $keyword = $request->input('search');
+
+        if(!empty($keyword)) {
+            $cables = Cable::where('Compatible Brands', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('Form', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('Model', 'LIKE', '%' . $keyword . '%')->get()->toArray();
+
+            $transceivers = Transceiver::where('Compatible Brand', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('Level 2 Form Factor', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('Model', 'LIKE', '%' . $keyword . '%')->get()->toArray();
+        } else {
+            $cables = Cable::all()->toArray();
+            $transceivers = Transceiver::all()->toArray();
+        }
+
+        $results = array_merge($cables, $transceivers);
+
+        return view('search_results', compact('keyword', 'results'));
+    }
+
+    public function viewTransceiver($id) {
+        $transceiver = Transceiver::find($id);
+        return view('transceiver', compact('transceiver'));
+    }
+
+    public function viewCable($id){
+        $cable = Cable::find($id);
+        return view('cable', compact('cable'));
     }
 }

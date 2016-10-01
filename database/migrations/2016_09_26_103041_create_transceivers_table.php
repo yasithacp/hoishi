@@ -14,7 +14,7 @@ class CreateTransceiversTable extends Migration
     {
         Schema::create('transceivers', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('Level 1 Optical Transceiver');
+            $table->string('Product Type');
             $table->string('Compatible Brand');
             $table->string('Level 2 Form Factor');
             $table->string('Level 3 Type of Standard');

@@ -63,6 +63,10 @@ Route::get('/case_studies', function () {
     return view('case_studies');
 });
 
+Route::get('/products/transceivers/{id}', 'ProductController@viewTransceiver');
+
+Route::get('/products/cables/{id}', 'ProductController@viewCable');
+
 Route::get('/products/{module}', 'ProductController@viewModuleProducts');
 
 Route::get('/products/{module}/{category}', 'ProductController@viewCategoryProducts');
@@ -70,3 +74,5 @@ Route::get('/products/{module}/{category}', 'ProductController@viewCategoryProdu
 Route::get('/cables/{type}', 'ProductController@viewCableTypes');
 
 Route::get('/cables/{type}/{form}', 'ProductController@viewCableForms');
+
+Route::post('/', 'ProductController@searchProducts');
