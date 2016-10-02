@@ -53,7 +53,7 @@
                                                 <div class="product-info">
                                                     <h3 class="title-product"><a href="#">{{ $transceiver->Model }}</a></h3>
                                                     <div class="contact-product">
-                                                        <a href="{{ url('contact') }}" class="btn btn-price btn-sm" >Product Details</a>
+                                                        <a href="{{ url('products/transceivers/' . $transceiver['id']) }}" class="btn btn-price btn-sm" >Product Details</a>
                                                     </div>
                                                 </div>
                                             </div>

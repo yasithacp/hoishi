@@ -53,7 +53,7 @@
                                                 <div class="product-info">
                                                     <h3 class="title-product"><a href="#">{{ $cable->Model }}</a></h3>
                                                     <div class="contact-product">
-                                                        <a href="{{ url('contact') }}" class="btn btn-price btn-sm" >Product Details</a>
+                                                        <a href="{{ url('products/cables/' . $cable['id']) }}" class="btn btn-price btn-sm" >Product Details</a>
                                                     </div>
                                                 </div>
                                             </div>

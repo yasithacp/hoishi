@@ -101,7 +101,11 @@
                                                 <div class="product-info">
                                                     <h3 class="title-product"><a href="#">{{ $result['Model'] }}</a></h3>
                                                     <div class="contact-product">
-                                                        <a href="{{ url('contact') }}" class="btn btn-price btn-sm" >Product Details</a>
+                                                        <?php if($result['Product Type'] == 'Optical Transceiver') { ?>
+                                                            <a href="{{ url('products/transceivers/' . $result['id']) }}" class="btn btn-price btn-sm" >Product Details</a>
+                                                        <?php } else { ?>
+                                                            <a href="{{ url('products/cables/' . $result['id']) }}" class="btn btn-price btn-sm" >Product Details</a>
+                                                        <?php } ?>
                                                     </div>
                                                 </div>
                                             </div>
