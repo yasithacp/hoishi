@@ -100,7 +100,24 @@
                                         </li>
                                     @endforeach
                                     <?php if ( sizeof($cables) == 0 ) { ?>
-                                        <h3>No Records Found</h3>
+                                        <div class="col-md-9 col-sm-8 col-xs-12">
+                                            <div class="main-content-shop">
+                                                <div class="shop-tab-product">
+                                                    <div class="tab-content">
+                                                        <div class="msg-wrapper-norec">
+                                                            <h3 class="mgs-norec-title">Sorry, no results were found</h3>
+                                                            <ul class="mgs-norec-body">
+                                                                <li>Check your spelling.</li>
+                                                                <li>Check the product no is correct.</li>
+                                                                <li><a href="{{ url('contact') }}">Contact us</a>, we will help you to find it.
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- End Sort Pagibar -->
+                                                    </div>
+                                                </div>
+                                                <!-- End Main Content Shop -->
+                                            </div>
                                     <?php } ?>
                                 </ul>
                                 <div class="row">

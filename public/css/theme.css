@@ -2224,12 +2224,18 @@ blockquote {
 }
 
 .box-filter {
-    border-bottom: 1px solid #e8e8e8;
-    margin-bottom: 20px;
+    border-top: 1px solid #e8e8e8;
+    margin-top: 20px;
+    padding-top: 20px;
 }
-.box-filter:last-child {
-    border: medium none;
-    margin: 0;
+/*.box-filter:last-child {*/
+    /*border: medium none;*/
+    /*margin: 0;*/
+/*}*/
+.box-filter:first-child {
+    border-top: none;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 .box-filter li {
     margin-bottom: 5px;
@@ -2267,6 +2273,10 @@ blockquote {
 }
 .box-filter:last-child ul{
 	margin:0;
+}
+
+.filters {
+    cursor: pointer;
 }
 
 .range-filter > label {
@@ -12098,6 +12108,10 @@ ol.list-post-comment {
     background: #fff9ed none repeat scroll 0 0;
     color: #fec64d;
 }
+.item-message-box.item-message-warning {
+    background: #fff9ed none repeat scroll 0 0;
+    color: #fec64d;
+}
 
 /***********************************************************************
 						Teams				
@@ -14198,6 +14212,11 @@ ol.list-post-comment {
 }
 .menu-title {
 	background-color:#f2f2f2;
+    pointer-events: none;
+    cursor: default;
+}
+.menu-title:hover {
+    
 }
 
 .btn-price {
@@ -14218,3 +14237,33 @@ ol.list-post-comment {
 .author_link { font-weight:400; }
 .contact-box { margin-bottom: 30px; }
 .case-title { padding-bottom: 10px; }
+
+.msg-wrapper-norec {
+    margin: 20px 0;
+}
+.mgs-norec-title {
+	text-align:left;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 10px 20px 0px;
+}
+.mgs-norec-body {
+	text-align:left;
+    list-style: disc;
+    margin: 10px 10px 20px 20px;
+}
+.mgs-norec-body li {
+	margin-bottom: 5px;
+}
+.mgs-norec-body li a {
+	color: #ff4c00;
+}
+.four04-bg {
+    background-color: #f2f2f2;
+}
+.four04-wrapper {
+    text-align: center;
+}
+.four04-link {
+    margin-top: 20px;
+}

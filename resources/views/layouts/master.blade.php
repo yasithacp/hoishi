@@ -598,5 +598,8 @@
 <script type="text/javascript" src="{{ URL::asset('js/TimeCircles.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('js/slideshow/jquery.themepunch.revolution.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('js/slideshow/jquery.themepunch.plugins.min.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('js/jquery.jcarousellite.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('js/jquery.elevatezoom.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('js/theme.js') }}"></script>
+@yield('custom_scripts')
 </html>

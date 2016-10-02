@@ -76,3 +76,5 @@ Route::get('/cables/{type}', 'ProductController@viewCableTypes');
 Route::get('/cables/{type}/{form}', 'ProductController@viewCableForms');
 
 Route::post('/', 'ProductController@searchProducts');
+
+Route::post('/filter/transceivers', 'ProductController@filterTransceivers');
