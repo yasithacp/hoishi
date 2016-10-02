@@ -584,10 +584,13 @@
 	.header-nav12 .title-category-dropdown { background-color: #484848; height: 40px; line-height: 40px; }
 	.left-sidebar .main-content { float: none }
 	.cat-mega-menu { display: none; }
-	.banner-slider { display:none; }
+	.banner-slider { display:none !important; }
+    .banner-slider-mobile { display: block !important; }
     .banner-slider10 { display:none; }
     .title-table-detail { width: 150px !important; }
     .info-table-detail { width: auto; }
+    .privacy-shipping.privacy-shipping12 { display: none !important; }
+	.bottom-home2 { margin-top: 20px; }
 }
 
 @media (max-width:480px) {
@@ -660,7 +663,6 @@
     .left-sidebar .main-content { float: none }
 	.sidebar-shop { margin-top: 20px; }
 	.banner-slider10 { display:none; }
-	.banner-slider { display:none; }
 	.privacy-shipping.privacy-shipping12 { margin-top:0px; margin-bottom:0px; }
 	.bottom-home2.bottom-home12 { margin-bottom:0px; }
 

@@ -31,16 +31,16 @@
                                     <div class="detail-info">
                                         <h2 class="title-detail">{{ $cable['Model'] }}</h2>
                                         <div class="product-code">
-                                            <label>SKU </label> <span>3CSFP97-A</span>
+                                            <label>Product Code </label> <span>3CSFP97-A</span>
                                         </div>
                                         <div class="product-code">
-                                            <label>Availability </label> <span>Same Day Shipping</span>
+                                            <label>Availability </label> <span>Next Day Shipping</span>
                                         </div>
                                         <div class="product-code">
-                                            <label>Shipping </label> <span>Calculated at Checkout</span>
+                                            <label>Shipping </label> <span>Calculated on Order Volume</span>
                                         </div>
                                         <div class="product-code">
-                                            <label>Price </label> <a class="btn btn-price btn-sm" href="{{ url('contact') }}">Ask for Price</a>
+                                            <label>Price </label> <a class="btn btn-price btn-sm" href="{{ url('contact') }}">Contact Us</a>
                                         </div>
                                         <!-- End Attr Info -->
                                     </div>

@@ -25,16 +25,16 @@
                                     <div class="detail-info">
                                         <h2 class="title-detail">{{ $transceiver['Model'] }}</h2>
                                         <div class="product-code">
-                                            <label>SKU </label> <span>3CSFP97-A</span>
+                                            <label>Product Code </label> <span>3CSFP97-A</span>
                                         </div>
                                         <div class="product-code">
-                                            <label>Availability </label> <span>Same Day Shipping</span>
+                                            <label>Availability </label> <span>Next Day Shipping</span>
                                         </div>
                                         <div class="product-code">
-                                            <label>Shipping </label> <span>Calculated at Checkout</span>
+                                            <label>Shipping </label> <span>Calculated on Order Volume</span>
                                         </div>
                                         <div class="product-code">
-                                            <label>Price </label> <a class="btn btn-price btn-sm" href="{{ url('contact') }}">Ask for Price</a>
+                                            <label>Price </label> <a class="btn btn-price btn-sm" href="{{ url('contact') }}">Contact Us</a>
                                         </div>
                                         <!-- End Attr Info -->
                                     </div>
@@ -95,13 +95,13 @@
                                             </div>
                                         </div>
                                         <div class="table-content-tab-detail">
-                                            <div class="title-table-detail"><span>Digital Diagnostics (DDM)</span></div>
+                                            <div class="title-table-detail"><span>Digital Diagnostics (DDM/DOM)</span></div>
                                             <div class="info-table-detail">
                                                 <p>{{ $transceiver['DOM / DDM Monitoring'] }}</p>
                                             </div>
                                         </div>
                                         <div class="table-content-tab-detail">
-                                            <div class="title-table-detail"><span>Connection: Single-mode Fiber (SMF)</span></div>
+                                            <div class="title-table-detail"><span>Connection</span></div>
                                             <div class="info-table-detail">
                                                 <p>{{ $transceiver['Connection'] }}</p>
                                             </div>

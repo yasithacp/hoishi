@@ -57,6 +57,7 @@
 
 </head>
 <body>
+@yield('facebook_feed')
 <div class="wrap">
     <div id="header">
         <div class="container">
@@ -440,7 +441,7 @@
                                     <ul class="sub-menu">
                                         <li><a href="{{ url('about') }}">About Us</a></li>
                                         <li><a href="{{ url('why_us') }}">Why Us</a></li>
-                                        <li><a href="{{ url('news') }}">News</a></li>
+                                        <li><a href="{{ url('case_studies') }}">Case Studies</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
@@ -489,7 +490,7 @@
                                 <ul>
                                     <li><a href="{{ url('about') }}">About Us</a></li>
                                     <li><a href="{{ url('why_us') }}">Why Us</a></li>
-                                    <li><a href="{{ url('news') }}">News</a></li>
+                                    <li><a href="{{ url('case_studies') }}">Case Studies</a></li>
                                 </ul>
                             </div>
                         </div>

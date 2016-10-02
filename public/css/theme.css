@@ -211,7 +211,6 @@ blockquote {
     margin-left: 5px;
 }
 .smart-search {
-    margin-left: -30px;
     margin-right: 50px;
     padding: 0 0 0 183px;
     position: relative;
@@ -1248,9 +1247,10 @@ blockquote {
 	position:relative;
 	overflow:hidden;
 }
-.item-adv-simple  a img{
+.item-adv-simple  a img {
 	width:100%;
 }
+/*
 .item-adv-simple  a::before {
     border-bottom: 1px solid rgba(255, 255, 255, 0.8);
     border-top: 1px solid rgba(255, 255, 255, 0.8);
@@ -1265,6 +1265,7 @@ blockquote {
     -moz-transform: scale(0, 1);
     z-index: 9;
 }
+*/
 .category-home-total {
     float: left;
     width: 17%;
@@ -1454,6 +1455,7 @@ blockquote {
 .box-adv-col2 .item-adv-simple {
     margin: 0 -10px;
 }
+/*
 .item-adv-simple  a::after {
     border-left: 1px solid rgba(255, 255, 255, 0.8);
     border-right: 1px solid rgba(255, 255, 255, 0.8);
@@ -1467,6 +1469,7 @@ blockquote {
     -webkit-transform: scale(1, 0);
     z-index: 9;
 }
+*/
 /*Start Color Box*/
 /*Red*/
 .category-product-featured.red-box {
@@ -2228,14 +2231,14 @@ blockquote {
     margin-top: 20px;
     padding-top: 20px;
 }
-/*.box-filter:last-child {*/
-    /*border: medium none;*/
-    /*margin: 0;*/
-/*}*/
 .box-filter:first-child {
     border-top: none;
     margin-top: 0px;
     padding-top: 0px;
+}
+/.box-filter:last-child {
+    border: medium none;
+    margin: 0;
 }
 .box-filter li {
     margin-bottom: 5px;
@@ -2273,10 +2276,6 @@ blockquote {
 }
 .box-filter:last-child ul{
 	margin:0;
-}
-
-.filters {
-    cursor: pointer;
 }
 
 .range-filter > label {
@@ -7718,8 +7717,8 @@ ol.list-post-comment {
 	line-height:50px;
 }
 .smart-search.search-form4 {
-    margin-right: -50px;
-    padding: 0 0 0 70px;
+    margin-right: 0px;
+    padding: 0px 0px 0px 0px;
 }
 .search-form4 .select-category .category-toggle-link{
 	height: 40px;
@@ -14266,4 +14265,8 @@ ol.list-post-comment {
 }
 .four04-link {
     margin-top: 20px;
+}
+.banner-slider-mobile { display: none; }
+.filters {
+    cursor: pointer;
 }

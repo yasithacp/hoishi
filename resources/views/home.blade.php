@@ -9,7 +9,22 @@
     <meta name="keywords" content="Optical Transceivers, Manufacturer, Distributor, Fibre Optic Transceiver, Compatible, Cisco, SFP, GBIC, QSFP, CFP, XFP, X2, XENPAK, CSFP, AOC, DAC">
 @endsection
 
+@section('facebook_feed')
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+@endsection
+
 @section('content')
+    <div class="banner-slider-mobile"> <img src="images/slide/slider-mobile.jpg"> </div>
     <div class="banner-slider">
         <div class="rev-slider">
             <ul>
@@ -105,28 +120,9 @@
             <div class="bottom-home2 bottom-home12">
                 <div class="row">
                     <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="box-bottom-home2 box-from-blog">
+                        <div class="box-bottom-home2">
                             <h2>Latest News</h2>
-                            <div class="wrap-item">
-                                <div class="item">
-                                    <div class="wrap-from-blog">
-                                        <div class="from-blog-info">
-                                            <h3><a href="#">Latest News</a></h3>
-                                            <p>Lorem ipsum dolor sit amen, dolor imun ra adlip ulisys ensteo Lorem ipsum dolor sit amen </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item m20">
-                                    <div class="wrap-from-blog">
-                                        <div class="from-blog-info">
-                                            <h3><a href="#">Latest News</a></h3>
-                                            <p>Lorem ipsum dolor sit amen, dolor imun ra adlip ulisys ensteo Lorem ipsum dolor sit amen</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <a href="#" class="viewall">View All</a>
+                            <div class="fb-page" data-href="https://www.facebook.com/HoishiLightSpeedData/" data-tabs="timeline" data-width="370" data-height="238" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/HoishiLightSpeedData/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/HoishiLightSpeedData/">Hoishi</a></blockquote></div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
