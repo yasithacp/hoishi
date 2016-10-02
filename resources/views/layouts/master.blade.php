@@ -78,7 +78,7 @@
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-12">
                         <div class="wrap-contacts">
-                            <span>CALL US: <strong><a href="tel:+44 207 242 4650">+44 207 242 4650</a></strong></span>
+                            <span>CALL US: <strong><a href="tel:+44 207 242 4650">+44 208 242 4650</a></strong></span>
                             <span>EMAIL: <strong><a href="mailto:sales@hoishi.com">sales@hoishi.com</a></strong></span>
                         </div>
                     </div>
@@ -518,7 +518,7 @@
                             <div class="box-menu-footer4">
                                 <h2>Contact Us</h2>
                                 <ul>
-                                    <li><a href="tel:+44 207 242 4650">+44 207 242 4650</a></li>
+                                    <li><a href="tel:+44 207 242 4650">+44 208 242 4650</a></li>
                                     <li><a href="mailto:sales@hoishi.com">sales@hoishi.com</a></li>
                                 </ul>
                             </div>
