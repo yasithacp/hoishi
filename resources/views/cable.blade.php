@@ -71,6 +71,12 @@
                                             </div>
                                         </div>
                                         <div class="table-content-tab-detail">
+                                            <div class="title-table-detail"><span>Assembly </span></div>
+                                            <div class="info-table-detail">
+                                                <p>{{ $cable['L5'] }}</p>
+                                            </div>
+                                        </div>
+                                        <div class="table-content-tab-detail">
                                             <div class="title-table-detail"><span>Specification </span></div>
                                             <div class="info-table-detail">
                                                 <p>{{ $cable['Specification'] }}</p>

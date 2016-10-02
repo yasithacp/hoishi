@@ -11,50 +11,14 @@
                     <div class="sidebar-shop sidebar-left">
                         <div class="widget widget-filter">
 
-                            <div class="box-filter category-filter">
+                            <div id="forms" class="box-filter category-filter">
                                 <h2 class="widget-title">Categories</h2>
-                                <ul>
-                                    <li><a href="#">BIDI</a></li>
-                                    <li><a href="#">CWDM</a></li>
-                                    <li><a href="#">DWDM</a></li>
-                                    <li><a href="#">EX</a></li>
-                                    <li><a href="#">FX</a></li>
-                                    <li><a href="#">LW</a></li>
-                                    <li><a href="#">ONS</a></li>
-                                    <li><a href="#">OC</a></li>
-                                    <li><a href="#">ONS</a></li>
-                                    <li><a href="#">SX</a></li>
-                                    <li><a href="#">T</a></li>
-                                    <li><a href="#">ZX</a></li>
-                                    <li><a href="#">ZXL</a></li>
-                                    <li><a href="#">SW</a></li>
-                                </ul>
                             </div>
 
                             <!-- End Categories -->
-                            <div class="box-filter brands-filter">
+                            <div id="brands" class="box-filter brands-filter">
                                 <h2 class="widget-title">Compatible Brands</h2>
-                                <ul>
-                                    <li><a href="#">3COM</a></li>
-                                    <li><a href="#">ACCCEDIAN</a></li>
-                                    <li><a href="#">ADTRAN</a></li>
-                                    <li><a href="#">ADVA</a></li>
-                                    <li><a href="#">ALCATEL</a></li>
-                                </ul>
                             </div>
-
-                            <!-- End Distance -->
-                            <div class="box-filter distance-filter">
-                                <h2 class="widget-title">Distance</h2>
-                                <ul>
-                                    <li><a href="#">80 - 100m</a></li>
-                                    <li><a href="#">1 - 5km</a></li>
-                                    <li><a href="#">10 - 20km</a></li>
-                                    <li><a href="#">25 - 40km</a></li>
-                                    <li><a href="#">100 - 120km</a></li>
-                                </ul>
-                            </div>
-                            <!-- End Price -->
 
                         </div>
                         <!-- End Filter -->
@@ -66,11 +30,7 @@
                     <div class="main-content-shop">
                         <div class="shop-tab-product">
                             <div class="shop-tab-title">
-                                <?php if(isset($form)) { ?>
-                                <h2>{{ $type . ' / ' . $form }}</h2>
-                                <?php } else { ?>
                                 <h2>{{ $type }}</h2>
-                                <?php } ?>
                             </div>
                             <div class="tab-content">
                                 <ul class="row product-grid auto-clear">
@@ -120,18 +80,18 @@
                                             </div>
                                     <?php } ?>
                                 </ul>
-                                <div class="row">
-                                    <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <div class="sort-pagi-bar">
-                                            <div class="product-pagi-nav">
-                                                <a href="#" class="active">1</a>
-                                                <a href="#">2</a>
-                                                <a href="#">3</a>
-                                                <a href="#" class="next">next <i class="fa fa-angle-double-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                {{--<div class="row">--}}
+                                    {{--<div class="col-md-12 col-sm-12 col-xs-12">--}}
+                                        {{--<div class="sort-pagi-bar">--}}
+                                            {{--<div class="product-pagi-nav">--}}
+                                                {{--<a href="#" class="active">1</a>--}}
+                                                {{--<a href="#">2</a>--}}
+                                                {{--<a href="#">3</a>--}}
+                                                {{--<a href="#" class="next">next <i class="fa fa-angle-double-right"></i></a>--}}
+                                            {{--</div>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
                                 <!-- End Sort Pagibar -->
                             </div>
                         </div>
@@ -143,4 +103,84 @@
             </div>
         </div>
     </div>
+    {{ Form::open(array('action'=>'ProductController@filterCables', 'method' => 'post', 'id' => 'filter_form')) }}
+    <input type="hidden" id="filter_type" name="filter_type"/>
+    <input type="hidden" id="filter_forms" name="filter_forms"/>
+    <input type="hidden" id="filter_brands" name="filter_brands"/>
+    {{ Form::close() }}
+@endsection
+
+@section('custom_scripts')
+    <script>
+        $( document ).ready(function() {
+            var type = '<?php echo $type; ?>';
+            var filter_forms = '<?php echo (isset($filter_forms) && sizeof($filter_forms) > 0) ? json_encode($filter_forms) : json_encode(array()); ?>';
+            var filter_brand = '<?php echo (isset($filter_brands) && sizeof($filter_brands) > 0) ? json_encode($filter_brands) : json_encode(array()); ?>';
+
+            var forms = '<?php echo json_encode($forms); ?>';
+            var brands = '<?php echo (isset($brands)) ? json_encode($brands) : json_encode(array()); ?>';
+
+            var filter_forms = JSON.parse(filter_forms);
+
+            if(filter_forms.length == 0 || filter_forms[0] == "") {
+                $('#brands').hide();
+            }
+
+            var forms = JSON.parse(forms);
+            var forms_html = '<ul>';
+            for (var key in forms) {
+                if(filter_forms.indexOf(forms[key]['Form']) != -1) {
+                    forms_html += '<li><a class="filters forms active">' + forms[key]['Form'] + '</a></li>';
+                } else {
+                    forms_html += '<li><a class="filters forms">' + forms[key]['Form'] + '</a></li>';
+                }
+            }
+            forms_html += '</ul>';
+            $('#forms').append(forms_html);
+
+            if(filter_forms.length > 0) {
+                var brands = JSON.parse(brands);
+                var brands_html = '<ul>';
+                for (var key in brands) {
+                    if(filter_brand.indexOf(brands[key]['Compatible Brands']) != -1) {
+                        brands_html += '<li><a class="filters brands active">' + brands[key]['Compatible Brands'] + '</a></li>';
+                    } else {
+                        brands_html += '<li><a class="filters brands">' + brands[key]['Compatible Brands'] + '</a></li>';
+                    }
+                }
+                brands_html += '</ul>';
+                $('#brands').append(brands_html);
+            }
+
+            $('.filters').click(function () {
+                if ( $( this ).hasClass( "active" ) ) {
+                    $(this).removeClass('active');
+                } else {
+                    $(this).addClass('active');
+                }
+
+                var forms = [];
+                $('.forms').each(function () {
+                    if ( $( this ).hasClass( "active" ) ) {
+                        forms.push($( this ).text());
+                    }
+                });
+
+                var brands = [];
+                $('.brands').each(function () {
+                    if ( $( this ).hasClass( "active" ) ) {
+                        brands.push($( this ).text());
+                    }
+                });
+
+                $('#filter_type').val(type);
+                $('#filter_forms').val(forms);
+                $('#filter_brands').val(brands);
+
+                $('#filter_form').submit();
+
+            })
+
+        });
+    </script>
 @endsection

@@ -15,7 +15,7 @@
             <div class="wrap-item">
                 <div class="item-banner10">
                     <div class="banner-thumb">
-                        <a href="#"><img src="images/slide/slider_about_1.jpg" alt="" /></a>
+                        <a href="#"><img src="{{ URL::asset('images/slide/slider_about_1.jpg') }}" alt="" /></a>
                     </div>
                     <div class="banner-info">
                         <div class="container">
@@ -23,7 +23,7 @@
                                 <div class="inner-content-text">
                                     <h2>Global Network, Global Connectivity, Global Reach</h2>
                                     <h4>Fully compliant to TUE, CE, FCC, UL and RoHS standards</h4>
-                                    <a href="product_information" class="shopnow">Learn More</a>
+                                    <a href="{{ url('product_information') }}" class="shopnow">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -45,8 +45,8 @@
                                     <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="products_dynamic_1.html">
-                                                    <img class="first-thumb" alt="hoishi CFP Modules" src="images/products/hoishi_cfp.jpg">
+                                                <a href="{{ url('products/CFP') }}">
+                                                    <img class="first-thumb" alt="hoishi CFP Modules" src="{{ URL::asset('images/products/hoishi_cfp.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -58,8 +58,8 @@
                                     <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="products_dynamic_1.html">
-                                                    <img class="first-thumb" alt="hoishi CSFP Modules" src="images/products/hoishi_csfp.jpg">
+                                                <a href="{{ url('products/CSFP') }}">
+                                                    <img class="first-thumb" alt="hoishi CSFP Modules" src="{{ URL::asset('images/products/hoishi_csfp.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -71,8 +71,8 @@
                                     <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="products_dynamic_1.html">
-                                                    <img class="first-thumb" alt="hoishi GBIC Modules" src="images/products/hoishi_gbic.jpg">
+                                                <a href="{{ url('products/GBIC') }}">
+                                                    <img class="first-thumb" alt="hoishi GBIC Modules" src="{{ URL::asset('images/products/hoishi_gbic.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -84,8 +84,8 @@
                                     <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="products_dynamic_1.html">
-                                                    <img class="first-thumb" alt="hoishi QSFP+ Modules" src="images/products/hoishi_qsfp_plus.jpg">
+                                                <a href="{{ url('products/QSFP+') }}">
+                                                    <img class="first-thumb" alt="hoishi QSFP+ Modules" src="{{ URL::asset('images/products/hoishi_qsfp_plus.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -97,8 +97,8 @@
                                     <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="products_dynamic_1.html">
-                                                    <img class="first-thumb" alt="hoishi QSFP28 Modules" src="images/products/hoishi_qsfp28.jpg">
+                                                <a href="{{ url('products/QSFP28') }}">
+                                                    <img class="first-thumb" alt="hoishi QSFP28 Modules" src="{{ URL::asset('images/products/hoishi_qsfp28.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -110,8 +110,8 @@
                                     <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="products_dynamic_1.html">
-                                                    <img class="first-thumb" alt="hoishi QSFP100 Modules" src="images/products/hoishi_qsfp100.jpg">
+                                                <a href="{{ url('products/QSFP100') }}">
+                                                    <img class="first-thumb" alt="hoishi QSFP100 Modules" src="{{ URL::asset('images/products/hoishi_qsfp100.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -123,8 +123,8 @@
                                     <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="products_dynamic_1.html">
-                                                    <img class="first-thumb" alt="hoishi SFP Modules" src="images/products/hoishi_sfp.jpg">
+                                                <a href="{{ url('products/SFP') }}">
+                                                    <img class="first-thumb" alt="hoishi SFP Modules" src="{{ URL::asset('images/products/hoishi_sfp.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -136,8 +136,8 @@
                                     <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="products_dynamic_1.html">
-                                                    <img class="first-thumb" alt="hoishi SFP+ Modules" src="images/products/hoishi_sfp_plus.jpg">
+                                                <a href="{{ url('products/SFP+') }}">
+                                                    <img class="first-thumb" alt="hoishi SFP+ Modules" src="{{ URL::asset('images/products/hoishi_sfp_plus.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -149,8 +149,8 @@
                                     <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="products_dynamic_1.html">
-                                                    <img class="first-thumb" alt="hoishi X2 Modules" src="images/products/hoishi_x2.jpg">
+                                                <a href="{{ url('products/X2') }}">
+                                                    <img class="first-thumb" alt="hoishi X2 Modules" src="{{ URL::asset('images/products/hoishi_x2.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -162,8 +162,8 @@
                                     <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="products_dynamic_1.html">
-                                                    <img class="first-thumb" alt="hoishi XENPAK Modules" src="images/products/hoishi_xenpak.jpg">
+                                                <a href="{{ url('products/XENPAK') }}">
+                                                    <img class="first-thumb" alt="hoishi XENPAK Modules" src="{{ URL::asset('images/products/hoishi_xenpak.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -175,8 +175,8 @@
                                     <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="products_dynamic_1.html">
-                                                    <img class="first-thumb" alt="hoishi XFP Modules" src="images/products/hoishi_xfp.jpg">
+                                                <a href="{{ url('products/XFP') }}">
+                                                    <img class="first-thumb" alt="hoishi XFP Modules" src="{{ URL::asset('images/products/hoishi_xfp.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -205,8 +205,8 @@
                                     <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="" src="images/products/hoishi_dac.jpg">
+                                                <a href="{{ url('cables/DIRECT ATTACH CABLES') }}">
+                                                    <img class="first-thumb" alt="" src="{{ URL::asset('images/products/hoishi_dac.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -218,8 +218,8 @@
                                     <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="" src="images/products/hoishi_aoc.jpg">
+                                                <a href="{{ url('cables/ACTIVE OPTICAL CABLES') }}">
+                                                    <img class="first-thumb" alt="" src="{{ URL::asset('images/products/hoishi_aoc.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -249,8 +249,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="3COM" src="images/brands/3com.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="3COM" src="{{ URL::asset('images/brands/3com.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -259,8 +259,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="alcatel lucent" src="images/brands/alcatel-lucent.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="alcatel lucent" src="{{ URL::asset('images/brands/alcatel-lucent.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -269,8 +269,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="allied telesis" src="images/brands/allied-telesis.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="allied telesis" src="{{ URL::asset('images/brands/allied-telesis.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -279,8 +279,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="avaya" src="images/brands/avaya.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="avaya" src="{{ URL::asset('images/brands/avaya.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -289,8 +289,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="brocade" src="images/brands/brocade.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="brocade" src="{{ URL::asset('images/brands/brocade.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -299,8 +299,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="cisco" src="images/brands/cisco.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="cisco" src="{{ URL::asset('images/brands/cisco.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -309,8 +309,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="d-link" src="images/brands/d-link.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="d-link" src="{{ URL::asset('images/brands/d-link.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -319,8 +319,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="dell" src="images/brands/dell.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="dell" src="{{ URL::asset('images/brands/dell.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -329,8 +329,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="enterasys" src="images/brands/enterasys.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="enterasys" src="{{ URL::asset('images/brands/enterasys.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -339,8 +339,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="extreme" src="images/brands/extreme.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="extreme" src="{{ URL::asset('images/brands/extreme.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -349,8 +349,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="force10" src="images/brands/force10.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="force10" src="{{ URL::asset('images/brands/force10.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -359,8 +359,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="foundry networks" src="images/brands/foundry.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="foundry networks" src="{{ URL::asset('images/brands/foundry.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -369,8 +369,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="h3c" src="images/brands/h3c.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="h3c" src="{{ URL::asset('images/brands/h3c.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -379,8 +379,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="hp" src="images/brands/hp.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="hp" src="{{ URL::asset('images/brands/hp.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -389,8 +389,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="huawei" src="images/brands/huawei.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="huawei" src="{{ URL::asset('images/brands/huawei.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -399,8 +399,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="intel" src="images/brands/intel.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="intel" src="{{ URL::asset('images/brands/intel.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -409,8 +409,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="juniper" src="images/brands/juniper.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="juniper" src="{{ URL::asset('images/brands/juniper.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -419,8 +419,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="linksys" src="images/brands/linksys.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="linksys" src="{{ URL::asset('images/brands/linksys.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -429,8 +429,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="netgear" src="images/brands/netgear.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="netgear" src="{{ URL::asset('images/brands/netgear.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -439,8 +439,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="nortel networks" src="images/brands/nortel.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="nortel networks" src="{{ URL::asset('images/brands/nortel.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -449,8 +449,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="smc networks" src="images/brands/smc.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="smc networks" src="{{ URL::asset('images/brands/smc.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -459,8 +459,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="sun" src="images/brands/sun.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="sun" src="{{ URL::asset('images/brands/sun.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -469,8 +469,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="zte" src="images/brands/zte.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="zte" src="{{ URL::asset('images/brands/zte.jpg') }}">
                                                 </a>
 
                                             </div>
@@ -479,8 +479,8 @@
                                     <li class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
                                         <div class="item-product">
                                             <div class="product-thumb">
-                                                <a href="detail.html">
-                                                    <img class="first-thumb" alt="zyxel" src="images/brands/zyxel.jpg">
+                                                <a>
+                                                    <img class="first-thumb" alt="zyxel" src="{{ URL::asset('images/brands/zyxel.jpg') }}">
                                                 </a>
 
                                             </div>

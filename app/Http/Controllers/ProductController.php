@@ -47,7 +47,9 @@ class ProductController extends Controller
 
     public function viewCableTypes($type){
         $cables = Cable::where('Level 2 Cable Type', $type)->get();
-        return view('cables', compact('type', 'cables'));
+        $forms = Cable::where('Level 2 Cable Type', $type)->distinct('Form')->select('Form')->get();
+        $filter_forms = array();
+        return view('cables', compact('type', 'cables', 'forms', 'filter_forms'));
     }
 
     public function viewCableForms($type, $form){
@@ -55,7 +57,17 @@ class ProductController extends Controller
             ['Level 2 Cable Type', $type],
             ['Form', $form],
         ])->get();
-        return view('cables', compact('type', 'form', 'cables'));
+
+        $forms = Cable::where('Level 2 Cable Type', $type)->distinct('Form')->select('Form')->get();
+
+        $brands = Cable::where([
+            ['Level 2 Cable Type', $type],
+            ['Form', $form],
+        ])->distinct('Compatible Brands')->select('Compatible Brands')->get();
+
+        $filter_forms = array($form);
+
+        return view('cables', compact('type', 'filter_forms', 'cables', 'forms', 'brands'));
     }
 
     public function searchProducts(Request $request){
@@ -126,5 +138,33 @@ class ProductController extends Controller
             ->distinct('Reach')->select('Reach')->get();
 
         return view('transceivers', compact('module', 'filter_categories', 'filter_brands', 'filter_distances', 'transceivers', 'categories', 'brands', 'distances'));
+    }
+
+    public function filterCables(Request $request){
+        $type = $request->input('filter_type');
+        $filter_forms = $request->input('filter_forms');
+        $filter_forms = explode(',' , $filter_forms);
+        $filter_brands = $request->input('filter_brands');
+        $filter_brands = explode(',' , $filter_brands);
+
+        $query = Cable::where('Level 2 Cable Type', $type);
+
+        if(sizeof($filter_forms) > 0 && !empty($filter_forms[0])) {
+            $query = $query->whereIn('Form', $filter_forms);
+        }
+
+        if(sizeof($filter_brands) > 0 && !empty($filter_brands[0])) {
+            $query = $query->whereIn('Compatible Brands', $filter_brands);
+        }
+
+        $cables = $query->get();
+
+        $forms = Cable::where('Level 2 Cable Type', $type)->distinct('Form')->select('Form')->get();
+
+        $brands = Cable::where('Level 2 Cable Type', $type)
+            ->whereIn('Form', $filter_forms)
+            ->distinct('Compatible Brands')->select('Compatible Brands')->get();
+
+        return view('cables', compact('type', 'filter_forms', 'filter_brands', 'cables', 'forms', 'brands'));
     }
 }

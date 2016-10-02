@@ -128,18 +128,18 @@
                                         </div>
                                     <?php } ?>
                                 </ul>
-                                <div class="row">
-                                    <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <div class="sort-pagi-bar">
-                                            <div class="product-pagi-nav">
-                                                <a href="#" class="active">1</a>
-                                                <a href="#">2</a>
-                                                <a href="#">3</a>
-                                                <a href="#" class="next">next <i class="fa fa-angle-double-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                {{--<div class="row">--}}
+                                    {{--<div class="col-md-12 col-sm-12 col-xs-12">--}}
+                                        {{--<div class="sort-pagi-bar">--}}
+                                            {{--<div class="product-pagi-nav">--}}
+                                                {{--<a href="#" class="active">1</a>--}}
+                                                {{--<a href="#">2</a>--}}
+                                                {{--<a href="#">3</a>--}}
+                                                {{--<a href="#" class="next">next <i class="fa fa-angle-double-right"></i></a>--}}
+                                            {{--</div>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
                                 <!-- End Sort Pagibar -->
                             </div>
                         </div>
