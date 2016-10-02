@@ -23,7 +23,8 @@ class CreateCablesTable extends Migration
             $table->string('L7')->nullable();
             $table->string('Model');
             $table->string('Specification');
-            $table->index(['Form', 'Model']);
+            $table->index('Form');
+            $table->index('Model');
         });
     }
 
