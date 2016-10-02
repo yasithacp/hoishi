@@ -15,7 +15,7 @@
             <div class="wrap-item">
                 <div class="item-banner10">
                     <div class="banner-thumb">
-                        <a href="#"><img src="{{ URL::asset('images/slide/slider_about_1.jpg') }}" alt="" /></a>
+                        <a href="#"><img src="{{ URL::asset('images/slide/banner_product_list.jpg') }}" alt="" /></a>
                     </div>
                     <div class="banner-info">
                         <div class="container">
