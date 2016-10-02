@@ -389,8 +389,8 @@
                                                         <h2 class="title-cat-mega-menu">DAC</h2>
                                                         <ul>
                                                             <li><a href="{{ url('cables/DIRECT ATTACH CABLES/SFP+ TWINAX') }}">SFT+ TWINAX</a></li>
-                                                            <li><a href="{{ url('cables/DIRECT ATTACH CABLES/QSFT+ TWINAX') }}">QSFT+TWINAX</a></li>
-                                                            <li><a href="{{ url('cables/DIRECT ATTACH CABLES/QSFP100 TWINAX') }}">QSFP100TWINAX</a></li>
+                                                            <li><a href="{{ url('cables/DIRECT ATTACH CABLES/QSFP+ TWINAX') }}">QSFT+ TWINAX</a></li>
+                                                            <li><a href="{{ url('cables/DIRECT ATTACH CABLES/QSFP100 TWINAX') }}">QSFP100 TWINAX</a></li>
                                                             <li><a href="{{ url('cables/DIRECT ATTACH CABLES/QSFP28 TWINAX') }}">QSFP28 TWINAX</a></li>
                                                             <li><a href="{{ url('cables/DIRECT ATTACH CABLES/SFP+ INFINIBAND') }}">SFP+ INFINIBAND</a></li>
                                                             <li><a href="{{ url('cables/DIRECT ATTACH CABLES/STACKING') }}">STACKING</a></li>
@@ -414,7 +414,7 @@
                                                         <h2 class="title-cat-mega-menu">AOC</h2>
                                                         <ul>
                                                             <li><a href="{{ url('cables/ACTIVE OPTICAL CABLES/ACTIVE OPTICAL CABLES') }}">AOC</a></li>
-                                                            <li><a href="{{ url('cables/ACTIVE OPTICAL CABLES/QSFP100 AOC') }}">QSFP100 AOC</a></li>
+                                                            <li><a href="{{ url('cables/ACTIVE OPTICAL CABLES/QSFP100 ACTIVE OPTICAL CABLES') }}">QSFP100 AOC</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
