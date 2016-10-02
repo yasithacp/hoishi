@@ -76,12 +76,6 @@
                                                 <p>{{ $cable['Specification'] }}</p>
                                             </div>
                                         </div>
-                                        <div class="table-content-tab-detail">
-                                            <div class="title-table-detail"><span>Data Sheet</span></div>
-                                            <div class="info-table-detail">
-                                                <p><a class="btn btn-price btn-sm" href="{{ url('contact') }}">Contact Us</a></p>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
