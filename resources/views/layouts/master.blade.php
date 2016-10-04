@@ -379,7 +379,7 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="#" class="menu-title">Cable Assembliess</a>
+                                        <a href="#" class="menu-title">Cable Assemblies</a>
                                     </li>
                                     <li class="has-cat-mega">
                                         <a href="{{ url('cables/DIRECT ATTACH CABLES') }}">DAC</a>
@@ -499,7 +499,7 @@
                                 <h2>Products</h2>
                                 <ul>
                                     <li><a href="{{ url('product_overview') }}">Products Overview</a></li>
-                                    <li><a href="{{ url('product_information') }}">Products Informations</a></li>
+                                    <li><a href="{{ url('product_information') }}">Product Information</a></li>
                                     <li><a href="{{ url('product_list') }}">Product List</a></li>
                                 </ul>
                             </div>

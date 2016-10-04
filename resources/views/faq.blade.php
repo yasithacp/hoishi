@@ -49,7 +49,7 @@
                                     The Federal Trade Commission’s Magnuson-Moss Act/Tie-in Sales Act protects consumers from the restriction that only OEM products or services can be purchased or used in order to keep a warranty valid. Further information about the <a class="f-color" href="https://www.ftc.gov/tips-advice/business-center/guidance/businesspersons-guide-federal-warranty-law#Magnuson-Moss" target="_blank">Magnuson-Moss-Act</a></p>
                             </div>
                             <div class="item-accordion">
-                                <h3 class="title-accordion">Does Hoishi offer optics to smaller network equipment manufacturers? What if I don’t see my manufacturer listed on your website?</h3>
+                                <h3 class="title-accordion">Does Hoishi offer optics from smaller network equipment manufacturers? What if I don’t see my manufacturer listed on your website?</h3>
                                 <p class="desc-accordion">In most cases, we are able to supply optics for even small, less well-known brands of network equipment. If we don’t already offer a particular brand, we can often code parts if supplied with a sample optic. If you don’t see your brand listed, just send us a request and we will get back to you.</p>
                             </div>
                             <div class="item-accordion">
@@ -59,7 +59,7 @@
                             </div>
                             <div class="item-accordion">
                                 <h3 class="title-accordion">Do you offer warranty?</h3>
-                                <p class="desc-accordion">Yes, we offer a limited lifetime warranty on all of our products. In the unlikely event of a fault, please
+                                <p class="desc-accordion">Yes, we offer a <a href="warranty.blade.php">limited lifetime warranty</a> on all of our products. In the unlikely event of a fault, please
                                     contact us and we will assist you in getting your replacement as quickly as possible.</p>
                             </div>
 
