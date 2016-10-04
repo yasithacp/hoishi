@@ -15,7 +15,7 @@
             <div class="wrap-item">
                 <div class="item-banner10">
                     <div class="banner-thumb">
-                        <a href="#"><img src="images/slide/slider_about_1.jpg" alt="" /></a>
+                        <a href="#"><img src="images/slide/banner_contacts.jpg" alt="" /></a>
                     </div>
                     <div class="banner-info">
                         <div class="container">
@@ -38,26 +38,26 @@
                         <div class="contact-form-page">
                             <h2>contact from</h2>
                             <div class="form-contact">
-                                <form>
+                                {{ Form::open(array('action'=>'ProductController@contact', 'method' => 'post')) }}
                                     <div class="row">
                                         <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <input type="text" name="name" value="Name *" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue">
+                                            <input type="text" name="name" placeholder="Name *" required>
                                         </div>
                                         <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <input type="text" name="email" value="Email *" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue">
+                                            <input type="text" name="email" placeholder="Email *" required>
                                         </div>
                                         <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <input type="text" name="Phone" value="Phone" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue">
+                                            <input type="text" name="phone" placeholder="Phone">
                                         </div>
                                         <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <input type="text" name="Subject" value="Subject *" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue">
+                                            <input type="text" name="subject" placeholder="Subject *" required>
                                         </div>
                                         <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <textarea name="message" cols="30" rows="8" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"></textarea>
+                                            <textarea name="body" cols="30" rows="8"></textarea>
                                             <input type="submit" value="Send" />
                                         </div>
                                     </div>
-                                </form>
+                                {{ Form::close() }}
                             </div>
                         </div>
                     </div>

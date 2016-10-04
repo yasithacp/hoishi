@@ -11,6 +11,7 @@ namespace App\Http\Controllers;
 use App\Cable;
 use Illuminate\Http\Request;
 use App\Transceiver;
+use Mail;
 
 class ProductController extends Controller
 {
@@ -166,5 +167,22 @@ class ProductController extends Controller
             ->distinct('Compatible Brands')->select('Compatible Brands')->get();
 
         return view('cables', compact('type', 'filter_forms', 'filter_brands', 'cables', 'forms', 'brands'));
+    }
+
+    public function contact(Request $request){
+
+        $data = array();
+        $data['name'] = $request->input('name');
+        $data['email'] = $request->input('email');
+        $data['phone'] = $request->input('phone');
+        $data['subject'] = $request->input('subject');
+        $data['body'] = $request->input('body');
+
+        Mail::send('contact_email', $data, function ($message) use ($data) {
+            $message->from($data['email'], 'Hoishi');
+            $message->to('warusavithana@gmail.com')->subject($data['subject']);
+        });
+
+        return view('contact');
     }
 }
