@@ -389,8 +389,8 @@
                                                     <div class="list-cat-mega-menu">
                                                         <h2 class="title-cat-mega-menu">DAC</h2>
                                                         <ul>
-                                                            <li><a href="{{ url('cables/DIRECT ATTACH CABLES/SFP+ TWINAX') }}">SFT+ TWINAX</a></li>
-                                                            <li><a href="{{ url('cables/DIRECT ATTACH CABLES/QSFP+ TWINAX') }}">QSFT+ TWINAX</a></li>
+                                                            <li><a href="{{ url('cables/DIRECT ATTACH CABLES/SFP+ TWINAX') }}">SFP+ TWINAX</a></li>
+                                                            <li><a href="{{ url('cables/DIRECT ATTACH CABLES/QSFP+ TWINAX') }}">QSFP+ TWINAX</a></li>
                                                             <li><a href="{{ url('cables/DIRECT ATTACH CABLES/QSFP100 TWINAX') }}">QSFP100 TWINAX</a></li>
                                                             <li><a href="{{ url('cables/DIRECT ATTACH CABLES/QSFP28 TWINAX') }}">QSFP28 TWINAX</a></li>
                                                             <li><a href="{{ url('cables/DIRECT ATTACH CABLES/SFP+ INFINIBAND') }}">SFP+ INFINIBAND</a></li>
