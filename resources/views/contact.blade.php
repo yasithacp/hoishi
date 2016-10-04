@@ -84,7 +84,7 @@
                             <div class="contact-box">
                                 <h4>Careers</h4>
                                 <p>We are always looking for qualified sales and technical staff.</p>
-                                <a class="f-color" href="mailto:sales@hoishi.com">careers@hoishi.com</a>
+                                <a class="f-color" href="mailto:careers@hoishi.com">careers@hoishi.com</a>
                             </div>
                         </div>
                     </div>

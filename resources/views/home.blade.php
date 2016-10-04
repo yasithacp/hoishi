@@ -51,7 +51,7 @@
                 </li>
                 <li class="slide4" data-transition="slide">
                     <img src="images/slide/bg-s1-04.png" alt="" />
-                    <div class="tp-caption lfl" data-x="320" data-y="40" data-start="1000" data-speed="1000" data-easing="easeInOutQuint" data-endspeed="300" style="z-index:1;"><h2 class="title-c4">SFP+ to SFP+ Cisco active optical cables</h2></div>
+                    <div class="tp-caption lfl" data-x="320" data-y="40" data-start="1000" data-speed="1000" data-easing="easeInOutQuint" data-endspeed="300" style="z-index:1;"><h2 class="title-c4">SFP+ to SFP+ Cisco Active Optical Cables</h2></div>
                     <div class="tp-caption lfl" data-x="320" data-y="120" data-start="1000" data-speed="1000" data-easing="easeInOutQuint" data-endspeed="300" style="z-index:1;"><p class="dec-c2">100% Cisco compatible AOC SFP-10G-AOC3M</p></div>
                     <div class="tp-caption lfl" data-x="320" data-y="230" data-start="1000" data-speed="1000" data-easing="easeInOutQuint" data-endspeed="300" style="z-index:1;"><a href="product_list" class="item2 btn-bgc4" href="#">Learn More</a></div>
                     <div class="tp-caption lfb" data-x="right" data-y="bottom" data-start="2000" data-speed="1000" data-easing="easeInOutQuint" data-endspeed="300" style="z-index:0;"><img src="images/slide/s1-04.png" alt="" /></div>
@@ -169,9 +169,9 @@
                             <div class="social-home2 social-network">
                                 <h2>Connect with us</h2>
                                 <ul>
-                                    <li><a href="#"><img alt="" src="images/home/s1.png"></a></li>
-                                    <li><a href="#"><img alt="" src="images/home/s2.png"></a></li>
-                                    <li><a href="#"><img alt="" src="images/home/s3.png"></a></li>
+                                    <li><a href="https://www.facebook.com/HoishiLightSpeedData/" target="_blank"><img alt="" src="images/home/s1.png"></a></li>
+                                    <li><a href="https://twitter.com/Hoishi_Ltd" target="_blank"><img alt="" src="images/home/s2.png"></a></li>
+                                    <li><a href="https://www.linkedin.com/company/hoishi" target="_blank"><img alt="" src="images/home/s3.png"></a></li>
                                 </ul>
                             </div>
                         </div>

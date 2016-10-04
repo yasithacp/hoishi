@@ -37,7 +37,7 @@
                     <div class="inner-content-shop">
                         <div class="shop-tab-product">
                             <div class="box-shop-page">
-                                <h2 class="title-shop-page">Optic Transceivers</h2>
+                                <h2 class="title-shop-page">Optical Transceivers</h2>
                                 <p class="des-shop-page">Transceivers range from 100Base-FX to 100Gb CFP products and cover optical and copper transceivers such as GBIC, SFP, SFP+, X2, XENPAK, XFP, 100Gb CFP and QSFP+. All transceivers are standards-based and comply with MSA.</p>
                             </div>
                             <div class="tab-content">
@@ -198,7 +198,7 @@
                         <div class="shop-tab-product">
                             <div class="box-shop-page">
                                 <h2 class="title-shop-page">Cable Assemblies</h2>
-                                <p class="des-shop-page">There are two types of cable assembly, Direct Attached Cable (DAC) and Active Optical Cable (AOC). DAC is used to connect one mobility access switch with another when forming a stack which can either be passive and active. AOC is an alternative to optical transceivers, which eliminate the interface between transceiver module and cable.</p>
+                                <p class="des-shop-page">There are two types of cable assembly, Direct Attached Cable (DAC) and Active Optical Cable (AOC). DAC is used to connect one mobility access switch with another when forming a stack which can either be passive and active. AOC is an alternative to optical transceivers, which eliminates the interface between transceiver module and cable.</p>
                             </div>
                             <div class="tab-content">
                                 <ul class="row product-grid auto-clear">
