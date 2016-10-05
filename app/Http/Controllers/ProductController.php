@@ -178,9 +178,11 @@ class ProductController extends Controller
         $data['subject'] = $request->input('subject');
         $data['body'] = $request->input('body');
 
-        Mail::send('contact_email', $data, function ($message) use ($data) {
+        $emails = ['daniel.hartwright@hoishi.com'];
+
+        Mail::send('contact_email', $data, function ($message) use ($data, $emails) {
             $message->from('admin@hoishi.com', 'Hoishi');
-            $message->to('sales@hoishi.com')->subject('[Hoishi - Contact Us] ' . $data['subject']);
+            $message->to($emails)->subject('[Hoishi - Contact Us] ' . $data['subject']);
         });
 
         return view('contact');
@@ -188,10 +190,11 @@ class ProductController extends Controller
 
     public function subscribe(Request $request){
         $data['email'] = $request->input('email');
+        $emails = ['daniel.hartwright@hoishi.com'];
 
-        Mail::send('subscribe', $data, function ($message) use ($data) {
+        Mail::send('subscribe', $data, function ($message) use ($data, $emails) {
             $message->from('admin@hoishi.com', 'Hoishi');
-            $message->to('sales@hoishi.com')->subject('[Hoishi - Subscribe] - Subscription Request for Newsletter');
+            $message->to($emails)->subject('[Hoishi - Subscribe] - Subscription Request for Newsletter');
         });
 
         return view('home');
