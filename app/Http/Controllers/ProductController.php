@@ -178,7 +178,7 @@ class ProductController extends Controller
         $data['subject'] = $request->input('subject');
         $data['body'] = $request->input('body');
 
-        $emails = ['daniel.hartwright@hoishi.com'];
+        $emails = ['danhartwright@gmail.com'];
 
         Mail::send('contact_email', $data, function ($message) use ($data, $emails) {
             $message->from('admin@hoishi.com', 'Hoishi');
@@ -190,7 +190,7 @@ class ProductController extends Controller
 
     public function subscribe(Request $request){
         $data['email'] = $request->input('email');
-        $emails = ['daniel.hartwright@hoishi.com'];
+        $emails = ['danhartwright@gmail.com'];
 
         Mail::send('subscribe', $data, function ($message) use ($data, $emails) {
             $message->from('admin@hoishi.com', 'Hoishi');
