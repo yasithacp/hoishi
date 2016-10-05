@@ -59,7 +59,7 @@
                             </div>
                             <div class="item-accordion">
                                 <h3 class="title-accordion">Do you offer warranty?</h3>
-                                <p class="desc-accordion">Yes, we offer a <a href="warranty.blade.php">limited lifetime warranty</a> on all of our products. In the unlikely event of a fault, please
+                                <p class="desc-accordion">Yes, we offer a <a href="warranty.blade.php" style="text-decoration: underline;">limited lifetime warranty</a> on all of our products. In the unlikely event of a fault, please
                                     contact us and we will assist you in getting your replacement as quickly as possible.</p>
                             </div>
 

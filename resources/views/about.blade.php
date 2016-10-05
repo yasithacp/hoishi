@@ -23,7 +23,7 @@
                             <div class="banner-content-text">
                                 <div class="inner-content-text">
                                     <h2>Our optical transceivers cover all form factors</h2>
-                                    <h4>CFP, CSFP, GBIC, QSFP+, QSFP28, QSFP100, SFP, SFP+, X2, XENPAK, XFP.</h4>
+                                    <h4>CFP, CSFP, GBIC, QSFP+, QSFP28, QSFP100, SFP, SFP+, X2, XENPAK, XFP</h4>
                                     <a href="product_list" class="shopnow">View Products</a>
                                 </div>
                             </div>

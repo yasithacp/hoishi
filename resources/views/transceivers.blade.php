@@ -65,11 +65,11 @@
                                                 <div class="shop-tab-product">
                                                     <div class="tab-content">
                                                         <div class="msg-wrapper-norec">
-                                                            <h3 class="mgs-norec-title">Sorry, no results were found</h3>
+                                                            <h3 class="mgs-norec-title">No results were found</h3>
                                                             <ul class="mgs-norec-body">
                                                                 <li>Check your spelling.</li>
                                                                 <li>Check the product no is correct.</li>
-                                                                <li><a href="{{ url('contact') }}">Contact us</a>, we will help you to find it.
+                                                                <li><a href="{{ url('contact') }}">Contact us</a>, we will help you find it.
                                                                 </li>
                                                             </ul>
                                                         </div>

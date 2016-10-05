@@ -21,7 +21,7 @@
                         <div class="container">
                             <div class="banner-content-text">
                                 <div class="inner-content-text">
-                                    <h2>Complaint to Compliance</h2>
+                                    <h2>Peace of Mind</h2>
                                     <h4>Limited lifetime warranty, MSA standards compliant, experts in programming and coding</h4>
                                     <a href="product_list" class="shopnow">View Products</a>
                                 </div>
@@ -36,8 +36,7 @@
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="inner-content-shop">
                         <h2 class="title-shop-page">Limited lifetime Warranty</h2>
-                        <p class="des-shop-page">Delivery time is estimated using our propriety method, which is based on the buyer’s proximity to the item location, the shipping service selected and the sellers shipping history. Generally, shipping time is 1-5 business days after the receipt of the official purchase order. Courier tracking will be provided.</p>	                           	                        
-                        <p class="des-shop-page">Hoishi offers a limited lifetime warranty on all Hoishi branded items. Hoishi transceivers and cable assemblies are warranted against defects in materials and manufacture.</p>
+                        <p class="des-shop-page">Delivery time is estimated using our propriety method, which is based on the buyer’s proximity to the item location, the shipping service selected and the sellers shipping history. Generally, shipping time is 1-5 business days after the receipt of the official purchase order. Courier tracking will be provided.</p>	                           	                                                
                         <h3 class="sub-title-h3">Returns Policy</h3>
                         <p class="des-shop-page">We make every effort to ensure that we ship the correct product to the right person at the right time. If something has changed or gone wrong and you wish to return an item then please request an RMA within two days of receipt of the order.</p>
                         <h3 class="sub-title-h3">Faulty Items</h3>

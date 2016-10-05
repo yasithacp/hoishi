@@ -498,7 +498,7 @@
                             <div class="box-menu-footer4">
                                 <h2>Products</h2>
                                 <ul>
-                                    <li><a href="{{ url('product_overview') }}">Products Overview</a></li>
+                                    <li><a href="{{ url('product_overview') }}">Product Overview</a></li>
                                     <li><a href="{{ url('product_information') }}">Product Information</a></li>
                                     <li><a href="{{ url('product_list') }}">Product List</a></li>
                                 </ul>
