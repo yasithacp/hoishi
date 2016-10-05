@@ -1,8 +1,6 @@
-<h2>{{ $email }} contacted you through hoishi.com</h2>
-
-<p>Requester's Name: {{ $name }}</p>
-<p>Requester's Email: {{ $email }}</p>
+<p>{{ $body }}</p>
+<br>
+<p>{{ $name }}</p>
 <?php if(!empty($phone)) { ?>
-    <p>Requester's Phone: {{ $phone }}</p>
+    <p>{{ $phone }}</p>
 <?php } ?>
-<p>Requester's Message: {{ $body }}</p>
