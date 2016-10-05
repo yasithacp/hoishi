@@ -21,7 +21,7 @@
                         <div class="container">
                             <div class="banner-content-text">
                                 <div class="inner-content-text">
-                                    <h2>Compliant to Compliance</h2>
+                                    <h2>Transforming Network Connectivity</h2>
                                     <h4>All transceivers are standards-based and comply with industry MSA standards</h4>
                                     <a href="product_list" class="shopnow">View Products</a>
                                 </div>
@@ -46,7 +46,7 @@
                     <div class="inner-content-shop">
                         <h3 class="sub-title-h3">Testing & Coding</h3>
                         <p class="des-shop-page">Not only are our optical transceivers and cables put through a rigorous testing procedure, each part is coded in our laboratory. All network transceivers and cable assemblies are programmed to the exact OEM specification. We pride ourselves on our strong technical background, with years of experience in programming and coding specialist custom parts.</p>
-                        <h3 class="sub-title-h3">Compliant</h3>
+                        <h3 class="sub-title-h3">Compliance</h3>
                         <p class="des-shop-page">Products are compliant with to TUE, CE, FCC, UL and RoHS.</p>
 
                     </div>
