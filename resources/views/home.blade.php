@@ -65,48 +65,48 @@
             <div class="privacy-shipping privacy-shipping12">
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="item-privacy-shipping">
+                        <a class="item-privacy-shipping" href="warranty.blade.php">
                             <ul>
                                 <li><i class="fa fa-tags"></i></li>
                                 <li>
-                                    <h2><a href="warranty">Warranty</a></h2>
+                                    <h2>Warranty</h2>
                                     <span>3yr limited lifetime</span>
                                 </li>
                             </ul>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="item-privacy-shipping">
+                        <a class="item-privacy-shipping" href="shipping.blade.php">
                             <ul>
                                 <li><i class="fa fa-plane"></i></li>
                                 <li>
-                                    <h2><a href="shipping">FREE SHIPPING</a></h2>
+                                    <h2>FREE SHIPPING</h2>
                                     <span>on selected orders</span>
                                 </li>
                             </ul>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="item-privacy-shipping">
+                        <a class="item-privacy-shipping" href="product_overview.blade.php">
                             <ul>
                                 <li><i class="fa fa-usd"></i></li>
                                 <li>
-                                    <h2><a href="product_overview">Affordable</a></h2>
+                                    <h2>Affordable</h2>
                                     <span>up to 90% off</span>
                                 </li>
                             </ul>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="item-privacy-shipping">
+                        <a class="item-privacy-shipping" href="product_list.blade.php">
                             <ul>
                                 <li><i class="fa fa-certificate"></i></li>
                                 <li>
-                                    <h2><a href="product_list">Compatibility</a></h2>
+                                    <h2>Compatibility</h2>
                                     <span>guaranteed</span>
                                 </li>
                             </ul>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
