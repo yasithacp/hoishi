@@ -180,7 +180,7 @@ class ProductController extends Controller
 
         Mail::send('contact_email', $data, function ($message) use ($data) {
             $message->from('admin@hoishi.com', 'Hoishi');
-            $message->to('yasitha4@gmail.com')->subject('[Hoishi - Contact Us] ' . $data['subject']);
+            $message->to('sales@hoishi.com')->subject('[Hoishi - Contact Us] ' . $data['subject']);
         });
 
         return view('contact');
@@ -191,7 +191,7 @@ class ProductController extends Controller
 
         Mail::send('subscribe', $data, function ($message) use ($data) {
             $message->from('admin@hoishi.com', 'Hoishi');
-            $message->to('yasitha4@gmail.com')->subject('[Hoishi - Subscribe] - Subscription Request for Newsletter');
+            $message->to('sales@hoishi.com')->subject('[Hoishi - Subscribe] - Subscription Request for Newsletter');
         });
 
         return view('home');
