@@ -223,7 +223,7 @@
                                         </div>
                                         <div class="feature-box-info">
                                             <h3>EX/ER</h3>
-                                            <p>Freegan lomo master cleanse, bitters hoodie gastropub cardigan synth sus tainable PBR next level semiotics.</p>
+                                            <p>Extended reach with range of up to 40Km with GBIC/SFP as well as with 10Gb/s transceivers.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -236,7 +236,7 @@
                                         </div>
                                         <div class="feature-box-info">
                                             <h3>ZX/ZR/EZX</h3>
-                                            <p>Extended reach with range up to 120km with GBIC/SFP and 80km with 10Gb/s transceivers.</p>
+                                            <p>Extended reach with range up to 160km with GBIC/SFP and 80km with 10Gb/s transceivers.</p>
                                         </div>
                                     </div>
                                 </div>

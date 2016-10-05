@@ -43,18 +43,16 @@
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="cs-body">
                         <h3 class="case-title">Case Study 1 – Value Added Coding</h3>
-                        <p class="des-shop-page">We support customers at a higher level. SFP/SFP+ coding device, which we recode the SFPs at our side.</p>
-                        <p class="des-shop-page">Our customer released a value added optical transceivers coding device to their OEM customers which allowed the OEM customer to program the transceivers at their site to benefit from:</p>
+                        <p class="des-shop-page">A large European systems integrator approached us for a customized solution to re-code compatible vendor specific transceivers that they had been procuring through Hoishi and other sources. They were becoming increasingly frustrated with some OEM switch vendors locking ports when 3rd party optics were sourced and implemented.</p>
+                        <p class="des-shop-page">Sometimes having to wait long periods of time to receive small quantities of expensive optics with the same specification as those that they currently had in stock or had used in redundant hardware. Our solution was to provide them with the necessary hardware and software to re-code small quantities of standard GBIC, SFP, SFP+, Xenpak to their own specific requirement. This eliminated the need to buy costly vendor specific parts, shortened the lead-time and enabled them to exchange parts as equipment was upgraded or added to. The result, a significant cost saving, easier stock management and ultimately better service to the end user.</p>
                         <p class="des-shop-page">
                         <ul class="cs-list">
-                            <li>Troubleshoot transceivers compatibility at customer's side</li>
-                            <li>Shorten the products lead-time </li>
-                            <li>Maximize products stock at customers site</li>
-                            <li>Meet customer's OEM requests</li>
+                            <li>Troubleshoot transceiver compatibility at customer site</li>
+                            <li>Shorten the product lead-time</li>
+                            <li>Maximize product stock at customer site</li>
+                            <li>Meet customer OEM requests</li>
                         </ul>
-                        </p>
-                        <p class="des-shop-page">Providing high quality and cost effective Telecom & Datacom optics and accessories solutions for LAN, MAN, FTTX applications. We are the manufacturer of 3rd party compatible optical and copper transceivers and cable assemblies, which are widely approved & recognized by our 200+ customers across the globe.</p>
-                        <p class="des-shop-page">We have a professional team who is able to verify the new released firmware and compatibility with all major OEM switches, routers, Storage manufacturers.</p>
+                        </p>                        
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
