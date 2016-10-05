@@ -1,6 +1,9 @@
+<p>Following message received from {{ $name . '[' . $email . '}' }}</p>
+
 <p>{{ $body }}</p>
-<br>
-<p>{{ $name }}</p>
+
+<p>Name: {{ $name }}</p>
+<p>Email: {{ $name }}</p>
 <?php if(!empty($phone)) { ?>
-    <p>{{ $phone }}</p>
+    <p>Phone: {{ $phone }}</p>
 <?php } ?>

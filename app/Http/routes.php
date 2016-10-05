@@ -82,3 +82,5 @@ Route::post('/filter/transceivers', 'ProductController@filterTransceivers');
 Route::post('/filter/cables', 'ProductController@filterCables');
 
 Route::post('/contact', 'ProductController@contact');
+
+Route::post('/subscribe', 'ProductController@subscribe');

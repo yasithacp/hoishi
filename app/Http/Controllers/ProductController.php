@@ -179,10 +179,21 @@ class ProductController extends Controller
         $data['body'] = $request->input('body');
 
         Mail::send('contact_email', $data, function ($message) use ($data) {
-            $message->from($data['email'], $data['name']);
-            $message->to('yasitha4@gmail.com')->subject($data['subject']);
+            $message->from('admin@hoishi.com', 'Hoishi');
+            $message->to('yasitha4@gmail.com')->subject('[Hoishi - Contact Us] ' . $data['subject']);
         });
 
         return view('contact');
+    }
+
+    public function subscribe(Request $request){
+        $data['email'] = $request->input('email');
+
+        Mail::send('subscribe', $data, function ($message) use ($data) {
+            $message->from('admin@hoishi.com', 'Hoishi');
+            $message->to('yasitha4@gmail.com')->subject('[Hoishi - Subscribe] - Subscription Request for Newsletter');
+        });
+
+        return view('home');
     }
 }

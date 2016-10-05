@@ -161,10 +161,10 @@
                             <div class="box-newsletter">
                                 <h2>Sign up for newsletter</h2>
                                 <p>Sign up to newsletter to learn about our new products and latest news.</p>
-                                <form>
-                                    <input type="text"  name="email" value="enter your e-mail " onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/>
+                                {{ Form::open(array('action'=>'ProductController@subscribe', 'method' => 'post', 'class' => 'smart-search-form')) }}
+                                    <input type="text"  name="email" placeholder="Enter your e-mail "/>
                                     <input type="submit" value="Subscribe" />
-                                </form>
+                                {{ Form::close() }}
                             </div>
                             <div class="social-home2 social-network">
                                 <h2>Connect with us</h2>
