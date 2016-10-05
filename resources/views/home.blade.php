@@ -65,7 +65,7 @@
             <div class="privacy-shipping privacy-shipping12">
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12">
-                        <a class="item-privacy-shipping" href="warranty.blade.php">
+                        <a class="item-privacy-shipping" href="warranty">
                             <ul>
                                 <li><i class="fa fa-tags"></i></li>
                                 <li>
@@ -76,7 +76,7 @@
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
-                        <a class="item-privacy-shipping" href="shipping.blade.php">
+                        <a class="item-privacy-shipping" href="shipping">
                             <ul>
                                 <li><i class="fa fa-plane"></i></li>
                                 <li>
@@ -87,7 +87,7 @@
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
-                        <a class="item-privacy-shipping" href="product_overview.blade.php">
+                        <a class="item-privacy-shipping" href="product_overview">
                             <ul>
                                 <li><i class="fa fa-usd"></i></li>
                                 <li>
@@ -98,7 +98,7 @@
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
-                        <a class="item-privacy-shipping" href="product_list.blade.php">
+                        <a class="item-privacy-shipping" href="product_list">
                             <ul>
                                 <li><i class="fa fa-certificate"></i></li>
                                 <li>
