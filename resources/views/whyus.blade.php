@@ -21,7 +21,7 @@
                         <div class="container">
                             <div class="banner-content-text">
                                 <div class="inner-content-text">
-                                    <h2>Transforming Network Connectivity</h2>
+                                    <h2>Compliant to Compliance</h2>
                                     <h4>All transceivers are standards-based and comply with industry MSA standards</h4>
                                     <a href="product_list" class="shopnow">View Products</a>
                                 </div>
