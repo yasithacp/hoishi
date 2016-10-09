@@ -178,25 +178,29 @@ class ProductController extends Controller
         $data['subject'] = $request->input('subject');
         $data['body'] = $request->input('body');
 
-        $emails = ['danhartwright@gmail.com'];
+        $emails = ['yasitha4@gmail.com'];
 
         Mail::send('contact_email', $data, function ($message) use ($data, $emails) {
             $message->from('admin@hoishi.com', 'Hoishi');
             $message->to($emails)->subject('[Hoishi - Contact Us] ' . $data['subject']);
         });
 
-        return view('contact');
+        $message = "Thank you for contacting us";
+
+        return view('contact', compact('message'));
     }
 
     public function subscribe(Request $request){
         $data['email'] = $request->input('email');
-        $emails = ['danhartwright@gmail.com'];
+        $emails = ['yasitha4@gmail.com'];
 
         Mail::send('subscribe', $data, function ($message) use ($data, $emails) {
             $message->from('admin@hoishi.com', 'Hoishi');
             $message->to($emails)->subject('[Hoishi - Subscribe] - Subscription Request for Newsletter');
         });
 
-        return view('home');
+        $message = "Thank you for subscribing";
+
+        return view('home', compact('message'));
     }
 }

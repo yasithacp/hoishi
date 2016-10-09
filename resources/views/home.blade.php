@@ -161,10 +161,16 @@
                             <div class="box-newsletter">
                                 <h2>Sign up for newsletter</h2>
                                 <p>Sign up to newsletter to learn about our new products and latest news.</p>
-                                {{ Form::open(array('action'=>'ProductController@subscribe', 'method' => 'post', 'class' => 'smart-search-form')) }}
-                                    <input type="text"  name="email" placeholder="Enter your e-mail "/>
-                                    <input type="submit" value="Subscribe" />
-                                {{ Form::close() }}
+                                <?php if(isset($message)) { ?>
+                                <div class="item-message-box item-message-success">
+                                    <p>{{ $message }}</p>
+                                </div>
+                                <?php } else { ?>
+                                    {{ Form::open(array('action'=>'ProductController@subscribe', 'method' => 'post', 'class' => 'smart-search-form')) }}
+                                        <input type="text"  name="email" placeholder="Enter your e-mail "/>
+                                        <input type="submit" value="Subscribe" />
+                                    {{ Form::close() }}
+                                <?php } ?>
                             </div>
                             <div class="social-home2 social-network">
                                 <h2>Connect with us</h2>

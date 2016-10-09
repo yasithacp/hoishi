@@ -37,6 +37,11 @@
                     <div class="inner-content-shop">
                         <div class="contact-form-page">
                             <h2>contact from</h2>
+                            <?php if(isset($message)) { ?>
+                                <div class="item-message-box item-message-success">
+                                    <p>{{ $message }}</p>
+                                </div>
+                            <?php } ?>
                             <div class="form-contact">
                                 {{ Form::open(array('action'=>'ProductController@contact', 'method' => 'post')) }}
                                     <div class="row">
