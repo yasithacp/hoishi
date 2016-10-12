@@ -71,7 +71,7 @@
                     <div class="col-md-6 col-sm-5 col-xs-12">
                         <div class="smart-search search-form4">
                             {{ Form::open(array('action'=>'ProductController@searchProducts', 'method' => 'post', 'class' => 'smart-search-form')) }}
-                                <input type="text"  name="search" placeholder="Find product, categories..." />
+                                <input type="text"  id="search" name="search" placeholder="Find product, categories..." required/>
                                 <input type="submit" value="search" />
                             {{ Form::close() }}
                         </div>

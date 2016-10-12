@@ -75,14 +75,90 @@ class ProductController extends Controller
 
         $keyword = $request->input('search');
 
-        if(!empty($keyword)) {
-            $cables = Cable::where('Compatible Brands', 'LIKE', '%' . $keyword . '%')
-                ->orWhere('Form', 'LIKE', '%' . $keyword . '%')
-                ->orWhere('Model', 'LIKE', '%' . $keyword . '%')->get()->toArray();
+        $filter_modules = $request->input('filter_modules');
+        $filter_modules = explode(',' , $filter_modules);
+        $filter_categories = $request->input('filter_categories');
+        $filter_categories = explode(',' , $filter_categories);
+        $filter_brands = $request->input('filter_brands');
+        $filter_brands = explode(',' , $filter_brands);
 
-            $transceivers = Transceiver::where('Compatible Brand', 'LIKE', '%' . $keyword . '%')
+        if(!empty($keyword)) {
+            $cables_query = Cable::where(function($q) use($keyword) {
+                $q->where('Compatible Brands', 'LIKE', '%' . $keyword . '%')
+                    ->orWhere('Form', 'LIKE', '%' . $keyword . '%')
+                    ->orWhere('Model', 'LIKE', '%' . $keyword . '%');
+            });
+
+            if(sizeof($filter_modules) > 0 && !empty($filter_modules[0])) {
+                $cables_query = $cables_query->whereIn('Level 2 Cable Type', $filter_modules);
+            }
+
+            if(sizeof($filter_categories) > 0 && !empty($filter_categories[0])) {
+                $cables_query = $cables_query->whereIn('Form', $filter_categories);
+            }
+
+            if(sizeof($filter_brands) > 0 && !empty($filter_brands[0])) {
+                $cables_query = $cables_query->whereIn('Compatible Brands', $filter_brands);
+            }
+
+            $cables = $cables_query->get()->toArray();
+
+            $transceivers_query = Transceiver::where(function($q) use($keyword) {
+                    $q->where('Compatible Brand', 'LIKE', '%' . $keyword . '%')
+                        ->orWhere('Level 2 Form Factor', 'LIKE', '%' . $keyword . '%')
+                        ->orWhere('Model', 'LIKE', '%' . $keyword . '%');
+                });
+
+            if(sizeof($filter_modules) > 0 && !empty($filter_modules[0])) {
+                $transceivers_query = $transceivers_query->whereIn('Level 2 Form Factor', $filter_modules);
+            }
+
+            if(sizeof($filter_categories) > 0 && !empty($filter_categories[0])) {
+                $transceivers_query = $transceivers_query->whereIn('Level 3 Type of Standard', $filter_categories);
+            }
+
+            if(sizeof($filter_brands) > 0 && !empty($filter_brands[0])) {
+                $transceivers_query = $transceivers_query->whereIn('Compatible Brand', $filter_brands);
+            }
+
+            $transceivers = $transceivers_query->get()->toArray();
+
+            $cables_modules = Cable::where('Compatible Brands', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('Form', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('Model', 'LIKE', '%' . $keyword . '%')
+                ->distinct('Level 2 Cable Type')->select('Level 2 Cable Type', 'Product Type')->get()->toArray();
+
+            $transceivers_modules = Transceiver::where('Compatible Brand', 'LIKE', '%' . $keyword . '%')
                 ->orWhere('Level 2 Form Factor', 'LIKE', '%' . $keyword . '%')
-                ->orWhere('Model', 'LIKE', '%' . $keyword . '%')->get()->toArray();
+                ->orWhere('Model', 'LIKE', '%' . $keyword . '%')
+                ->distinct('Level 2 Form Factor')->select('Level 2 Form Factor', 'Product Type')->get()->toArray();
+
+            $modules = array_merge($transceivers_modules, $cables_modules);
+
+            $cables_categories = Cable::where('Compatible Brands', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('Form', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('Model', 'LIKE', '%' . $keyword . '%')
+                ->distinct('Form')->select('Form', 'Product Type')->get()->toArray();
+
+            $transceivers_categories = Transceiver::where('Compatible Brand', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('Level 2 Form Factor', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('Model', 'LIKE', '%' . $keyword . '%')
+                ->distinct('Level 3 Type of Standard')->select('Level 3 Type of Standard', 'Product Type')->get()->toArray();
+
+            $categories = array_merge($transceivers_categories, $cables_categories);
+
+            $cables_brands = Cable::where('Compatible Brands', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('Form', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('Model', 'LIKE', '%' . $keyword . '%')
+                ->distinct('Compatible Brands')->select('Compatible Brands', 'Product Type')->get()->toArray();
+
+            $transceivers_brands = Transceiver::where('Compatible Brand', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('Level 2 Form Factor', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('Model', 'LIKE', '%' . $keyword . '%')
+                ->distinct('Compatible Brand')->select('Compatible Brand', 'Product Type')->get()->toArray();
+
+            $brands = array_merge($transceivers_brands, $cables_brands);
+
         } else {
             $cables = Cable::all()->toArray();
             $transceivers = Transceiver::all()->toArray();
@@ -90,7 +166,7 @@ class ProductController extends Controller
 
         $results = array_merge($cables, $transceivers);
 
-        return view('search_results', compact('keyword', 'results'));
+        return view('search_results', compact('keyword', 'results', 'filter_modules', 'modules', 'filter_categories', 'categories', 'filter_brands', 'brands'));
     }
 
     public function viewTransceiver($id) {

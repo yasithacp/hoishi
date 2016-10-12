@@ -11,48 +11,18 @@
                     <div class="sidebar-shop sidebar-left">
                         <div class="widget widget-filter">
 
-                            <div class="box-filter category-filter">
-                                <h2 class="widget-title">Categories</h2>
-                                <ul>
-                                    <li><a href="#">BIDI</a></li>
-                                    <li><a href="#">CWDM</a></li>
-                                    <li><a href="#">DWDM</a></li>
-                                    <li><a href="#">EX</a></li>
-                                    <li><a href="#">FX</a></li>
-                                    <li><a href="#">LW</a></li>
-                                    <li><a href="#">ONS</a></li>
-                                    <li><a href="#">OC</a></li>
-                                    <li><a href="#">ONS</a></li>
-                                    <li><a href="#">SX</a></li>
-                                    <li><a href="#">T</a></li>
-                                    <li><a href="#">ZX</a></li>
-                                    <li><a href="#">ZXL</a></li>
-                                    <li><a href="#">SW</a></li>
-                                </ul>
+                            <div id="modules" class="box-filter category-filter">
+                                <h2 class="widget-title">Products</h2>
                             </div>
 
                             <!-- End Categories -->
-                            <div class="box-filter brands-filter">
-                                <h2 class="widget-title">Compatible Brands</h2>
-                                <ul>
-                                    <li><a href="#">3COM</a></li>
-                                    <li><a href="#">ACCCEDIAN</a></li>
-                                    <li><a href="#">ADTRAN</a></li>
-                                    <li><a href="#">ADVA</a></li>
-                                    <li><a href="#">ALCATEL</a></li>
-                                </ul>
+                            <div id="categories" class="box-filter brands-filter">
+                                <h2 class="widget-title">Categories</h2>
                             </div>
 
                             <!-- End Distance -->
-                            <div class="box-filter distance-filter">
-                                <h2 class="widget-title">Distance</h2>
-                                <ul>
-                                    <li><a href="#">80 - 100m</a></li>
-                                    <li><a href="#">1 - 5km</a></li>
-                                    <li><a href="#">10 - 20km</a></li>
-                                    <li><a href="#">25 - 40km</a></li>
-                                    <li><a href="#">100 - 120km</a></li>
-                                </ul>
+                            <div id="brands" class="box-filter distance-filter">
+                                <h2 class="widget-title">Compatible Brands</h2>
                             </div>
                             <!-- End Price -->
 
@@ -155,4 +125,136 @@
             </div>
         </div>
     </div>
+    {{ Form::open(array('action'=>'ProductController@searchProducts', 'method' => 'post', 'id' => 'filter_form')) }}
+        <input type="hidden" id="keyword" name="search"/>
+        <input type="hidden" id="filter_modules" name="filter_modules"/>
+        <input type="hidden" id="filter_categories" name="filter_categories"/>
+        <input type="hidden" id="filter_brands" name="filter_brands"/>
+    {{ Form::close() }}
+@endsection
+
+@section('custom_scripts')
+    <script>
+        $( document ).ready(function() {
+
+            var keyword = '<?php echo $keyword; ?>';
+            $('#search').val(keyword);
+            var modules = '<?php echo json_encode($modules); ?>';
+            var filter_modules = <?php echo (isset($filter_modules) && sizeof($filter_modules) > 0) ? json_encode($filter_modules) : json_encode(array()); ?>;
+            var categories = '<?php echo json_encode($categories); ?>';
+            var filter_categories = '<?php echo (isset($filter_categories) && sizeof($filter_categories) > 0) ? json_encode($filter_categories) : json_encode(array()); ?>';
+            var brands = '<?php echo json_encode($brands); ?>';
+            var filter_brands = '<?php echo (isset($filter_brands) && sizeof($filter_brands) > 0) ? json_encode($filter_brands) : json_encode(array()); ?>';
+
+
+            var modules = JSON.parse(modules);
+            var modules_html = '<ul>';
+            console.log(filter_modules);
+            for (var key in modules) {
+
+                if(modules[key]['Product Type'] == 'Optical Transceiver') {
+                    console.log(filter_modules.indexOf(modules[key]['Level 2 Form Factor']) );
+                    if(filter_modules.indexOf(modules[key]['Level 2 Form Factor']) != -1) {
+                        modules_html += '<li><a class="filters modules active">' + modules[key]['Level 2 Form Factor'] + '</a></li>';
+                    } else {
+                        modules_html += '<li><a class="filters modules">' + modules[key]['Level 2 Form Factor']+ '</a></li>';
+                    }
+                } else {
+                    if(filter_modules.indexOf(modules[key]['Level 2 Cable Type']) != -1) {
+                        modules_html += '<li><a class="filters modules active">' + modules[key]['Level 2 Cable Type'] + '</a></li>';
+                    } else {
+                        modules_html += '<li><a class="filters modules">' + modules[key]['Level 2 Cable Type']+ '</a></li>';
+                    }
+                }
+            }
+            modules_html += '</ul>';
+            $('#modules').append(modules_html);
+
+            var categories = JSON.parse(categories);
+            var categories_html = '<ul>';
+            for (var key in categories) {
+                if(categories[key]['Product Type'] == 'Optical Transceiver') {
+                    if(filter_categories.indexOf(categories[key]['Level 3 Type of Standard']) != -1) {
+                        categories_html += '<li><a class="filters categories active">' + categories[key]['Level 3 Type of Standard'] + '</a></li>';
+                    } else {
+                        categories_html += '<li><a class="filters categories">' + categories[key]['Level 3 Type of Standard']+ '</a></li>';
+                    }
+                } else {
+                    if(filter_categories.indexOf(categories[key]['Form']) != -1) {
+                        categories_html += '<li><a class="filters categories active">' + categories[key]['Form'] + '</a></li>';
+                    } else {
+                        categories_html += '<li><a class="filters categories">' + categories[key]['Form']+ '</a></li>';
+                    }
+                }
+            }
+            categories_html += '</ul>';
+            $('#categories').append(categories_html);
+
+            var brands = JSON.parse(brands);
+            var brands_html = '<ul>';
+            var unique_brands = [];
+            for (var key in brands) {
+                if (brands[key]['Product Type'] == 'Optical Transceiver') {
+                    if(unique_brands.indexOf(brands[key]['Compatible Brand']) == -1) {
+                        if (filter_brands.indexOf(brands[key]['Compatible Brand']) != -1) {
+                            brands_html += '<li><a class="filters brands active">' + brands[key]['Compatible Brand'] + '</a></li>';
+                        } else {
+                            brands_html += '<li><a class="filters brands">' + brands[key]['Compatible Brand'] + '</a></li>';
+                        }
+                        unique_brands.push(brands[key]['Compatible Brand']);
+                    }
+                } else {
+                    if(unique_brands.indexOf(brands[key]['Compatible Brands']) == -1) {
+                        if (filter_brands.indexOf(brands[key]['Compatible Brands']) != -1) {
+                            brands_html += '<li><a class="filters brands active">' + brands[key]['Compatible Brands'] + '</a></li>';
+                        } else {
+                            brands_html += '<li><a class="filters brands">' + brands[key]['Compatible Brands'] + '</a></li>';
+                        }
+                        unique_brands.push(brands[key]['Compatible Brands']);
+                    }
+                }
+            }
+
+            brands_html += '</ul>';
+            $('#brands').append(brands_html);
+
+            $('.filters').click(function () {
+                if ( $( this ).hasClass( "active" ) ) {
+                    $(this).removeClass('active');
+                } else {
+                    $(this).addClass('active');
+                }
+
+                var modules = [];
+                $('.modules').each(function () {
+                    if ( $( this ).hasClass( "active" ) ) {
+                        modules.push($( this ).text());
+                    }
+                });
+
+                var categories = [];
+                $('.categories').each(function () {
+                    if ( $( this ).hasClass( "active" ) ) {
+                        categories.push($( this ).text());
+                    }
+                });
+
+                var brands = [];
+                $('.brands').each(function () {
+                    if ( $( this ).hasClass( "active" ) ) {
+                        brands.push($( this ).text());
+                    }
+                });
+
+                $('#keyword').val(keyword);
+                $('#filter_modules').val(modules);
+                $('#filter_categories').val(categories);
+                $('#filter_brands').val(brands);
+
+                $('#filter_form').submit();
+
+            });
+
+        });
+    </script>
 @endsection

@@ -202,7 +202,7 @@
 
             $('#filter_form').submit();
 
-        })
+        });
 
     });
 </script>
