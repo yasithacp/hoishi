@@ -33,7 +33,7 @@
                                 <h2>{{ $type }}</h2>
                             </div>
                             <div class="tab-content">
-                                <ul class="row product-grid auto-clear">
+                                <ul id="items" class="row product-grid auto-clear">
                                     @foreach($cables as $cable)
                                         <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                             <div class="item-product">
@@ -180,6 +180,12 @@
                 $('#filter_form').submit();
 
             })
+
+            $('#items').paginate({
+                perPage: 24,
+                useHashLocation: false,
+                paginatePosition:   ['bottom']
+            });
 
         });
     </script>

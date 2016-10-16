@@ -31,6 +31,7 @@
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('js/slideshow/settings.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/theme.css') }}" media="all"/>
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/responsive.css') }}" media="all"/>
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/jquery.paginate.css') }}" media="all"/>
 
     <!-- ****** favicon ****** -->
     <link rel="shortcut icon" href="{{ URL::asset('images/favicon/favicon.ico') }}">
@@ -610,5 +611,6 @@
 <script type="text/javascript" src="{{ URL::asset('js/jquery.jcarousellite.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('js/jquery.elevatezoom.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('js/theme.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('js/jquery.paginate.js') }}"></script>
 @yield('custom_scripts')
 </html>

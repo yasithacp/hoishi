@@ -39,7 +39,7 @@
                                 <h2>{{ $module }} Transceivers</h2>
                             </div>
                             <div class="tab-content">
-                                <ul class="row product-grid auto-clear">
+                                <ul id="items" class="row product-grid auto-clear">
                                     @foreach($transceivers as $transceiver)
                                         <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                             <div class="item-product">
@@ -80,18 +80,13 @@
                                             </div>
                                     <?php } ?>
                                 </ul>
-                                {{--<div class="row">--}}
-                                    {{--<div class="col-md-12 col-sm-12 col-xs-12">--}}
-                                        {{--<div class="sort-pagi-bar">--}}
-                                            {{--<div class="product-pagi-nav">--}}
-                                                {{--<a href="#" class="active">1</a>--}}
-                                                {{--<a href="#">2</a>--}}
-                                                {{--<a href="#">3</a>--}}
-                                                {{--<a href="#" class="next">next <i class="fa fa-angle-double-right"></i></a>--}}
-                                            {{--</div>--}}
-                                        {{--</div>--}}
-                                    {{--</div>--}}
-                                {{--</div>--}}
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="sort-pagi-bar">
+                                            <div id='page_navigation' class="product-pagi-nav"></div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <!-- End Sort Pagibar -->
                             </div>
                         </div>
@@ -104,6 +99,8 @@
         </div>
     </div>
     {{ Form::open(array('action'=>'ProductController@filterTransceivers', 'method' => 'post', 'id' => 'filter_form')) }}
+        <input type='hidden' id='current_page' />
+        <input type='hidden' id='show_per_page' />
         <input type="hidden" id="filter_module" name="filter_module"/>
         <input type="hidden" id="filter_categories" name="filter_categories"/>
         <input type="hidden" id="filter_brands" name="filter_brands"/>
@@ -202,6 +199,12 @@
 
             $('#filter_form').submit();
 
+        });
+
+        $('#items').paginate({
+            perPage: 24,
+            useHashLocation: false,
+            paginatePosition:   ['bottom']
         });
 
     });
