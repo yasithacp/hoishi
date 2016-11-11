@@ -83,7 +83,7 @@
                             </div>
                             <div class="contact-box">
                                 <h4>Development/Engineering</h4>
-                                <p><a href="tel:+852 812 575 28">+852 812 575 28</a></p>
+                                <p><a href="tel:+852 812 072 23">+852 812 072 23</a></p>
                                 <a class="f-color" href="mailto:technical@hoishi.com">technical@hoishi.com</a>
                             </div>
                             <div class="contact-box">
