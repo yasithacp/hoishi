@@ -133,7 +133,7 @@
                                     <div class="item-testimo">
                                         <div class="author-testimo">
                                             <div class="author-test-link">
-                                                <a href="case_studies"><img src="images/home/case_study_1.jpg" alt="" /></a>
+                                                <a target="_blank" href="assets/Hoishi_Full_Product_Catalogue_Master.pdf"><img src="images/home/ads_home.jpg" alt=""></a>
                                             </div>
                                             <div class="author-test-info">
                                                 <h3>Value Added Coding</h3>
